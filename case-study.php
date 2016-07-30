@@ -266,32 +266,32 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                 </div>
             </div>
             <?php 
-            //Get number of projects
-$allProjects = $conn->query("SELECT * FROM projects");
-while($allProject = $allProjects->fetch_assoc()) {
-$all = $allProject[ID];
-}
+                //Get number of projects
+                $allProjects = $conn->query("SELECT * FROM projects");
+                while($allProject = $allProjects->fetch_assoc()) {
+                $all = $allProject[ID];
+                }
 
-//Calculate Next and Prev buttons
-$next = $ID + 1;
-$prev = $ID - 1;
-if ($next > $all) { $next = 1; }
-if ($prev == 0) { $prev = $all; }
+                //Calculate Next and Prev buttons
+                $next = $ID + 1;
+                $prev = $ID - 1;
+                if ($next > $all) { $next = 1; }
+                if ($prev == 0) { $prev = $all; }
 
-//Get next project
-$nextProjects = $conn->query("SELECT * FROM projects WHERE ID='$next' LIMIT 1");
-while($nextProject = $nextProjects->fetch_assoc()) {
-$nextFolder = $nextProject[folder];
-$nextName = $nextProject[name];
-}
+                //Get next project
+                $nextProjects = $conn->query("SELECT * FROM projects WHERE ID='$next' LIMIT 1");
+                while($nextProject = $nextProjects->fetch_assoc()) {
+                $nextFolder = $nextProject[folder];
+                $nextName = $nextProject[name];
+                }
 
-//Get previous project
-$prevProjects = $conn->query("SELECT * FROM projects WHERE ID='$prev' LIMIT 1");
-while($prevProject = $prevProjects->fetch_assoc()) {
-$prevFolder = $prevProject[folder];
-$prevName = $prevProject[name];
-}
-?>
+                //Get previous project
+                $prevProjects = $conn->query("SELECT * FROM projects WHERE ID='$prev' LIMIT 1");
+                while($prevProject = $prevProjects->fetch_assoc()) {
+                $prevFolder = $prevProject[folder];
+                $prevName = $prevProject[name];
+                }
+            ?>
                 <div class="container medium-space order-control">
                     <a href="case-study.php?project=<?php echo $prevFolder; ?>" class="link-hover previous-project style-tooltip" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='fluid-image' style='margin: 0 0; padding-bottom: 62.5%; width: 18em; display: block; background-image: url(project/<?php echo $prevFolder ;?>/thumbnail.png);'></div>">
                         <p>
@@ -352,9 +352,7 @@ $prevName = $prevProject[name];
                                     </a>
                                     <div class="small-space"></div>
                                 </div>
-
-<div class="clearfix visible-xs-block"></div>
-
+                                <div class="clearfix visible-xs-block"></div>
                                 <div class="col-xs-6 col-sm-3">
                                     <a href="case-study.php?project=<?php echo ${'recent'.$allminustwo.'Folder'}; ?>">
                                         <div class="thumbnail log-thumbnail" style="background-image: url(project/<?php echo ${'recent'.$allminustwo.'Folder'}; ?>/thumbnail.png);"></div>
@@ -366,7 +364,6 @@ $prevName = $prevProject[name];
 
                                     </a>
                                     <div class="small-space"></div>
-
                                 </div>
                                 <div class="col-xs-6 col-sm-3">
                                     <a href="case-study.php?project=<?php echo ${'recent'.$allminusthree.'Folder'}; ?>">
