@@ -381,5 +381,4 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                 </div>
                 <?php require_once('footer.php');?>
     </body>
-
     </html>
