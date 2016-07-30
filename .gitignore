@@ -69,3 +69,7 @@ CVS
 project/imagineland/digital/development/
 project/dolcevia/digital/development/
 project/yesiam/digital/development/
+connection.php
+admin.php
+panel.php
+library.php
