@@ -1,0 +1,120 @@
+html,
+body {
+    margin: 0px; 
+    padding: 0px; 
+    background-color: #f8f8f8;
+}
+
+.email-background {
+    padding: 100px 0px;
+    margin: 0px; 
+    background-color: #f8f8f8;
+}
+
+.email-container {
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.pre-header {
+    opacity: 0;
+    height: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 100%;
+}
+
+.blue-link {
+    color: #0167CB;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+p {
+    font-family: 'theinhardtlight', 'Open Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.small {
+    font-size: 14px;
+    text-align: left;
+}
+
+.long-button {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+.follow-us {
+    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.fa {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.line {
+    padding-top: 30px;
+    border-top: 1px solid #C9C9C9;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: left;
+    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .email-background {
+        padding: 10px;
+    }
+    .email-container {
+        padding: 0;
+    }
+}

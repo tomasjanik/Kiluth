@@ -8,25 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <style>
-        <?php require_once('main.css');
-        ?> <?php require_once('fonts/theinhardt.css');
-        ?>
+        <?php require_once('fonts/theinhardt.css'); ?>
+        <?php require_once('main.css');?> 
     </style>
 </head>
 
 <body>
-   <table class="container">
-       <thead class="child">
-           <tr>
-               <th class="border"></th>
-               <th class="center">
-                   <?php require_once('content.php'); ?>
-                   <?php require_once('footer.php'); ?>
-               </th>
-               <th class="border"></th>
-           </tr>
-       </thead>
-   </table>
+    <div class="email-background">
+        <div class="email-container">
+            <?php require_once('content.php'); ?>
+                <?php require_once('footer.php'); ?>
+        </div>
+    </div>
 </body>
-
 </html>
