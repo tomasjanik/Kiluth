@@ -1,5 +1,5 @@
 <div class="pre-header">
-    We want to kindly greet you, and let you know that we exist. We are currently taking new projects, if you are interested, please contact hello@kiluth.com or poom@kiluth.com with brief information of your advertisement or campaign.
+    We want to kindly greet you, and let you know that we exist.
 </div>
 <a class="logo" href="http://kiluth.com/index.php">Kiluth</a>
 <br />
@@ -8,7 +8,7 @@
     <br />
     <br /> Established in 2015, we created artistic designs for brands to communicate with users through screens, prints and packages. Through the experience, we have bonded with minimalistic designs, perfecting the craft, and composing visual messages. Approaching projects with logic and understanding, we create unique and immersive experience, and form identities for brands in a communicative and meaningful fashion.
     <br />
-    <br /> We want to kindly greet you, and let you know that we exist. We are currently taking new projects, if you are interested, please contact <a class="blue-link" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="blue-link" href="mailto:poom@kiluth.com">poom@kiluth.com</a> with brief information of your advertisement or campaign. </p>
+    <br /> We want to kindly greet you, and let you know that we exist. We are currently taking new projects, if you are interested, please contact <a class="blue-link" href="mailto:hello@kiluth.com">hello@kiluth.com </a> or <a class="blue-link" href="mailto:poom@kiluth.com">poom@kiluth.com </a> with brief information of your advertisement or campaign. </p>
     <br />
 <br />
 <br />

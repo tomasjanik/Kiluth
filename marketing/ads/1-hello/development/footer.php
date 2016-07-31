@@ -36,7 +36,7 @@
 <p class="container line text-left small">
     <br /> © 2016 Kiluth.
     <br />
-    <br /> You have received this email because you subscribed to our newsletter service on <a class="blue-link" href="http://kiluth.com/index.php">kiluth.com</a>  with this email. If you believe this is an error, you can contact <a class="blue-link" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="blue-link" href="http://kiluth.com/index.php">unsubscribe</a> from the mailing list.
+    <br /> You have received this email because you subscribed to our newsletter service on <a class="blue-link" href="http://kiluth.com/index.php">kiluth.com </a>with this email. If you believe this is an error, you can contact <a class="blue-link" href="mailto:hello@kiluth.com">hello@kiluth.com </a> or <a class="blue-link" href="http://kiluth.com/index.php">unsubscribe </a>from the mailing list.
     <br />
     <br /> If cannot view this email, please <a class="blue-link" href="http://kiluth.com/marketing/ads/1-hello/development/index.php">click here</a>. </p>
     <br />
