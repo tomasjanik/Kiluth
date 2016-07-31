@@ -25,26 +25,23 @@
             <div class="small-space desktop-only"></div>
             <div class="container">
                 <div class="row logs-holder">
-
-                    <?php $logs = $conn->query("SELECT * FROM logs ORDER BY date_published DESC");
+<?php $logs = $conn->query("SELECT * FROM logs ORDER BY date_published DESC");
 while($log = $logs->fetch_assoc()) {
 //renderLogs($log[ID] ,$log[date_published], $log[title], $log[folder], $log[content], $log[size], $log[tags]);
     $originalDate = $log[date_published];
 $formatedDate = date("d/m/Y", strtotime($originalDate));
 $date_published = $formatedDate;
-    
     ?>
-                        <a href="log.php?log=<?php echo $log[ID]; ?>" class="col-sm-6 project-view log-view item <?php echo $log[tags]; ?>">
-                                    <div class="thumbnail log-thumbnail" style="background-image: url(logs/<?php echo $log[folder]; ?>/thumbnail.png); background-image: -webkit-image-set(url(logs/<?php echo $log[folder]; ?>/thumbnail.png) 1x, url(logs/<?php echo $log[folder]; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
-                                    </div>
-                                    <div class="log-info">
-                                        <p class="name preview" data-toggle="tooltip" data-placement="top" title="<?php echo $log[title]; ?>" data-delay='{"show":"2000"}'><?php echo $log[title]; ?></p>
-                                        <p class="text-muted text-smaller"><?php echo $date_published; ?></p>
-                                    </div>
-                                    <br />
-                                </a>
-                        <?php
-}; ?>
+                    <a href="log.php?log=<?php echo $log[ID]; ?>" class="col-sm-6 project-view log-view item <?php echo $log[tags]; ?>">
+                        <div class="thumbnail log-thumbnail" style="background-image: url(logs/<?php echo $log[folder]; ?>/thumbnail.png); background-image: -webkit-image-set(url(logs/<?php echo $log[folder]; ?>/thumbnail.png) 1x, url(logs/<?php echo $log[folder]; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
+                        </div>
+                        <div class="log-info">
+                            <p class="name preview" data-toggle="tooltip" data-placement="top" title="<?php echo $log[title]; ?>" data-delay='{"show":"2000"}'><?php echo $log[title]; ?></p>
+                            <p class="text-muted text-smaller"><?php echo $date_published; ?></p>
+                        </div>
+                        <br />
+                    </a>
+                    <?php }; ?>
                 </div>
             </div>
             <?php require_once('footer.php');?>

@@ -9,16 +9,16 @@ $active = str_replace("'","''",$_POST[active]);
 $text = str_replace("<br>","<br />",$text);
 
 if(strpos($_POST[submit], 'Save') !== false) {
-        //Update existing log
-        $sql = "UPDATE carousel
-        SET 
+    //Update existing log
+    $sql = "UPDATE carousel
+    SET 
 
-        text='$text',
-        folder='$folder',
-        active='$active'
+    text='$text',
+    folder='$folder',
+    active='$active'
 
 
-        WHERE ID='$ID'";
+    WHERE ID='$ID'";
 }
 
 

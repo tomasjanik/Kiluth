@@ -70,12 +70,14 @@
         </div>
         <div class="container">
             <!--                       -->
-            <p class="text-bigger">Kiluth is a digital-oriented branding agency working with clients from
+            <p class="text-bigger">
+                Kiluth is a digital-oriented branding agency working with clients from
                 <br class="desktop-only" /> different countries. Our studio is based in Bangkok, Thailand. We
-                <br class="desktop-only" />uniquely assign identities to brands with artistic approach.
+                <br class="desktop-only" />uniquely assign identities to brands with artistic approaches.
                 <br />
                 <br /> We work independently with brands and businesses, creating modern
-                <br class="desktop-only" />solutions, forming sense of place for the clients and their end-users. </p>
+                <br class="desktop-only" />solutions, forming sense of place for the clients and their end-users.
+            </p>
             <!--                        -->
             <div class="row space">
                 <div class="col-md-9">
