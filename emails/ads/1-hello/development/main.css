@@ -1,9 +1,19 @@
-body {
+body,
+.container {
     text-align: center;
     background-color: #f8f8f8;
     font-family: 'Open Sans Light', sans-serif;
     letter-spacing: 1px;
     font-weight: 100;
+    overflow-x: hidden;
+}
+
+.border {
+    width: 20%;
+}
+
+.center {
+    width: 60%;
 }
 
 h1 {
@@ -40,7 +50,7 @@ a {
 }
 
 img {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -48,14 +58,15 @@ img {
 }
 
 .main {
-    width: 100%;
+    width: 150%;
+    position: relative;
+    left: -25%;
     -moz-box-shadow: inherit;
     -webkit-box-shadow: inherit;
     box-shadow: inherit;
 }
 
 p {
-    margin: 0 20%;
     text-align: left;
     font-family: 'Theinhardt-light', 'Roboto', sans-serif;
     line-height: 36px;
@@ -77,7 +88,7 @@ p {
 
 .long-button {
     display: block;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 10px 0;
     border-top: 1px solid #C9C9C9;
@@ -101,24 +112,20 @@ i {
 .line {
     border-top: 1px solid #C9C9C9;
     padding-top: 30px;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 
 table {
     border-collapse: collapse;
-    width: 60%;
     margin: 0 auto;
     text-align: left;
-}
-
-tr {
     width: 100%;
 }
 
 th {
-    width: 30%;
     float: left;
+    width: 30%;
 }
 
 th,
@@ -129,4 +136,26 @@ td {
     font-family: 'Open Sans Light', sans-serif;
     letter-spacing: 1px;
     font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+    th {
+        font-size: 14px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    .logo {
+        font-size: 50px;
+    }
+    th {
+        float: left;
+        width: 100%;
+    }
+    .border {
+        width: 5%;
+    }
+    .center {
+        width: 90%;
+    }
 }
