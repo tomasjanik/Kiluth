@@ -270,6 +270,7 @@ strong {
 }
 
 .fa.sub {
+    vertical-align: middle;
     margin-left: 0;
     margin-right: 3px;
 }
