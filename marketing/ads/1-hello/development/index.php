@@ -20,5 +20,10 @@
                 <?php require_once('footer.php'); ?>
         </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 </body>
 </html>
