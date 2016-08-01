@@ -31,7 +31,7 @@
                                                 <p class="text-bigger"> 
                                                     Welcome to Kiluth, a digital-oriented branding agency. We are a group of young designers, strategists and developers. Our studio is based in Bangkok, Thailand.
                                                     <br />
-                                                    <br />Established in 2015, we created artistic designs for brands to communicate with users through screens, prints and packages. Through the experience, we have bonded with minimalistic designs, perfecting the craft, and composing visual messages. Approaching projects with logic and understanding, we create unique and immersive experience, and form identities for brands in a communicative and meaningful fashion.
+                                                    <br />Established in 2015, we created artistic designs for brands to communicate with users through screens, prints and packages. Through the experience, we have bonded with minimalistic designs, perfecting the craft, and composing stunning visual messages. Approaching projects with logic and understanding, we create unique and immersive experience, and form identities for brands in a communicative and meaningful fashion.
                                                     <br />
                                                     <br />We are a small agency, consisting of some market researchers, business strategists, graphic designers, web developers and advertising enthusiasts.
                                                 </p>
