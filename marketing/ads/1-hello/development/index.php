@@ -9,17 +9,32 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     <style>
-        <?php require_once('fonts/theinhardt.css'); ?>
-        <?php require_once('main.css');?> 
+        <?php require_once('fonts/theinhardt.css');
+        ?> <?php require_once('main.css');
+        ?>
     </style>
 </head>
 
 <body>
     <div class="email-background">
+       <!--Email Title-->
+            <div class="pre-header"> We want to kindly greet you, and let you know that we exist. </div> 
+            
+            <!--Logo-->
+            <a class="logo" href="http://kiluth.com/index.php">
+                <img src="http://kiluth.com/images/logos/logo.svg" alt="" width="150px">
+            </a>
+            <br />
+            <br /> 
+            <span class="subtitle">A Digital-Oriented Branding Agency</span> 
+            
+            <!--Header Image-->
+            <img class="main" src="http://kiluth.com/marketing/ads/1-hello/development/images/main.png" alt="">
         <div class="email-container">
             <?php require_once('content.php'); ?>
-                <?php require_once('footer.php'); ?>
+            <?php require_once('footer.php'); ?>
         </div>
     </div>
 </body>
+
 </html>
