@@ -6,7 +6,7 @@
 ██║ ╚═╝ ██║██║  ██║██████╔╝███████╗    ██████╔╝   ██║       ██║  ██╗██║███████╗╚██████╔╝   ██║   ██║  ██║
 ╚═╝     ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═════╝    ╚═╝       ╚═╝  ╚═╝╚═╝╚══════╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝
 -->
-   <?php require_once('connection.php');?>
+<?php require_once('connection.php');?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -14,59 +14,29 @@
         <?php require_once('head.php');?>
             <!--Howler-->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
-            <link rel="stylesheet" href="styles/second.css">
             <style>
-                .divider {
-                    background-color: white;
-                    height: 1px;
-                    width: 40px;
-                }
-                
-                .page-div {
-                    background-color: white;
-                    width: 1px;
-                    position: fixed;
-                    height: 100%;
-                    bottom: 0;
-                    opacity: 0.1;
-                }
-                
-                .page-div:nth-child(even) {
-                    opacity: 0;
-                }
-                
-                .contact-info {
-                    font-size: 12pt;
-                }
-                
-                .space.double {
-                    margin-top: 100px;
+                html,
+                body {
+                    background-color: #f8f8f8;
+                    overflow: hidden;
                 }
             </style>
     </head>
 
     <body>
         <div class="container">
-            <!---->
-            <div class="medium-space"></div>
-            <div class="divider space"></div>
-            <h2>Coming back soon</h2>
-            <div class="space double">
-                <p class="logo small-space">Kiluth</p>
-                <div class="small-space"></div>
-                <?php require_once('contact-module.php'); ?>
+            <div class="small-space"></div>
+            <div class="text-center">
+                <p id="fadein1" class="logo" style="font-size: 60px;" hidden="hidden"> Kiluth </p> <span id="fadein2" class="text-normal" hidden="hidden">
+                    Coming Back Soon
+                </span>
+                <br />
+                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 110px; left: 0; right: 0; opacity: 0;"></div>
             </div>
-            <!---->
-            <div class="page-div" style="left: 10%;"></div>
-            <div class="page-div" style="left: 20%;"></div>
-            <div class="page-div" style="left: 30%;"></div>
-            <div class="page-div" style="left: 40%;"></div>
-            <div class="page-div" style="left: 50%;"></div>
-            <div class="page-div" style="left: 60%;"></div>
-            <div class="page-div" style="left: 70%;"></div>
-            <div class="page-div" style="left: 80%;"></div>
-            <div class="page-div" style="left: 90%;"></div>
-            <!---->
+            <div id="fadein4" class="text-right" style="position: absolute; bottom: 5px; right: 10px;" hidden="hidden">
+                <p style="font-size: 14px;"> <a class="link-hover" href="mailto:hello@kiluth.com">hello@kiluth.com</a>
+                    <br /> <a href="tel:+66931242007">+66 (0) 93 124 2007</a> </p>
+            </div>
         </div>
         <script>
             var sound = new Howl({
@@ -74,6 +44,19 @@
                 , autoplay: true
                 , loop: true
             });
+            setTimeout(function () {
+                $('#fadein1').fadeIn(1000);
+                setTimeout(function () {
+                    $('#fadein2').fadeIn(1000);
+                    setTimeout(function () {
+                        $("#fadein3").animate({top: '120px', opacity: '1'}, { "duration": 1000, "easing": "linear" });
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+            
+            setTimeout(function () {
+                $('#fadein4').fadeIn(1000);
+            }, 5000);
         </script>
     </body>
 
