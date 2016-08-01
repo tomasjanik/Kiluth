@@ -2,7 +2,7 @@
 
 * {
     color: white;
-    font-family: 'theinhardtregular';
+    font-family: 'theinhardtregular', sans-serif;
 }
 
 ::-webkit-scrollbar-track {
@@ -46,7 +46,7 @@ a {
 }
 
 .screen p {
-    font-family: 'theinhardtlight';
+    font-family: 'theinhardtlight', sans-serif;
 }
 
 .screen p.subtitle {

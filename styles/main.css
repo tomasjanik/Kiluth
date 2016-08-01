@@ -55,7 +55,7 @@ nav {
     opacity: 1;
     transition: all 0.3s ease;
     font-weight: 100;
-    font-family: 'theinhardtregular';
+    font-family: 'theinhardtregular', sans-serif;
 }
 
 .navbar-nav li a:hover {
