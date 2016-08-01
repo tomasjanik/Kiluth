@@ -34,8 +34,11 @@
                 <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 110px; left: 0; right: 0; opacity: 0;"></div>
             </div>
             <div id="fadein4" class="text-right" style="position: absolute; bottom: 5px; right: 10px;" hidden="hidden">
-                <p style="font-size: 14px;"> <a class="link-hover" href="mailto:hello@kiluth.com">hello@kiluth.com</a>
-                    <br /> <a href="tel:+66931242007">+66 (0) 93 124 2007</a> </p>
+                <p style="font-size: 14px;"> 
+                    <a id="tel" class="link-hover" href="tel:+66931242007" hidden="hidden">+66 (0) 93 124 2007</a> 
+                    <br />
+                    <a id="link" class="link-hover" href="mailto:hello@kiluth.com">hello@kiluth.com</a>
+                </p>
             </div>
         </div>
         <script>
@@ -56,6 +59,12 @@
             
             setTimeout(function () {
                 $('#fadein4').fadeIn(1000);
+                $('#fadein4').mouseenter(function () {
+                   $('#tel').fadeIn(); 
+                });
+                $('#fadein4').mouseleave(function () {
+                   $('#tel').fadeOut(); 
+                });
             }, 5000);
         </script>
     </body>
