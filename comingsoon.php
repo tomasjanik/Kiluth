@@ -31,14 +31,11 @@
                     Coming Back Soon
                 </span>
                 <br />
-                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 110px; left: 0; right: 0; opacity: 0;"></div>
+                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -45px; top: 105px; left: 0; right: 0; opacity: 0;"></div>
             </div>
-            <div id="fadein4" class="text-right" style="position: absolute; bottom: 5px; right: 10px;" hidden="hidden">
-                <p style="font-size: 14px;"> 
-                    <a id="tel" class="link-hover" href="tel:+66931242007" hidden="hidden">+66 (0) 93 124 2007</a> 
-                    <br />
-                    <a id="link" class="link-hover" href="mailto:hello@kiluth.com">hello@kiluth.com</a>
-                </p>
+            <div id="fadein4" class="text-left" style="position: absolute; bottom: 5px; left: 10px;" hidden="hidden">
+                <p style="font-size: 14px;"> <a id="tel" class="link-hover" href="tel:+66931242007" hidden="hidden">+66 (0) 93 124 2007</a>
+                    <br /> <a id="link" class="link-hover" href="mailto:hello@kiluth.com">hello@kiluth.com</a> </p>
             </div>
         </div>
         <script>
@@ -52,18 +49,24 @@
                 setTimeout(function () {
                     $('#fadein2').fadeIn(1000);
                     setTimeout(function () {
-                        $("#fadein3").animate({top: '120px', opacity: '1'}, { "duration": 1000, "easing": "linear" });
+                        $("#fadein3").animate({
+                            top: '110px'
+                            , bottom: '-50px'
+                            , opacity: '1'
+                        }, {
+                            "duration": 1000
+                            , "easing": "linear"
+                        });
                     }, 1000);
                 }, 1000);
             }, 1000);
-            
             setTimeout(function () {
                 $('#fadein4').fadeIn(1000);
                 $('#fadein4').mouseenter(function () {
-                   $('#tel').fadeIn(); 
+                    $('#tel').fadeIn();
                 });
                 $('#fadein4').mouseleave(function () {
-                   $('#tel').fadeOut(); 
+                    $('#tel').fadeOut();
                 });
             }, 5000);
         </script>
