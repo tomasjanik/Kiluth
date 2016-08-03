@@ -1,4 +1,4 @@
-<?php require_once('../../connection.php'); 
+<?php require_once('connection.php'); 
 $getfolder = $_GET['project'];
 $projects = $conn->query("SELECT * FROM projects WHERE folder='$getfolder' LIMIT 1");
 while($project = $projects->fetch_assoc()) {
@@ -41,13 +41,32 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+<link rel="manifest" href="images/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <title>Thank you.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
 
-<body style="margin: 0; padding: 0; background-color: #e6e6e6;">
+<body style="margin: 0; padding: 0; background-color: #f8f8f8;">
     <div style="font-family: 'Open Sans', sans-serif; font-weight: 100;">
-        <p style="opacity: 0; color: #e6e6e6; height: 0px; font-size: 18px;">Your invoice has been generated! Thank you for using our service. We hope to work with you again in the future.</p>
-        <table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; text-align: left; line-height: 36px; padding: 50px 20px; background-color: #e6e6e6;">
+        <p style="opacity: 0; color: #f8f8f8; height: 0px; font-size: 18px;">Your invoice has been generated! Thank you for using our service. We hope to work with you again in the future.</p>
+        <table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; text-align: left; line-height: 36px; padding: 50px 20px; background-color: #f8f8f8;">
             <tr>
                 <td>
                    <p style="font-weight: 600; font-size: 70px; letter-spacing: 1px; margin: 0;">K</p>
@@ -122,7 +141,7 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <br />
                                     <?php echo $_GET['email']; ?>
                                     <br />
-                                    <?php echo $_GET['tel']; ?>
+                                    <?php echo str_replace("(","(+",$_GET['tel']); ?>
                                     <br />
                                     <br />
                                     <?php echo $_GET['location']; ?>
