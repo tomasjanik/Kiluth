@@ -2,6 +2,7 @@
 
 $black: #000;
 $white: #fff;
+$grey: #C9C9C9;
 $theinhardtlight: 'theinhardtlight', 'Open Sans', 'Roboto', sans-serif;
 $theinhardtregular: 'theinhardtregular', 'Open Sans', 'Roboto', sans-serif;
 $opensans: 'Open Sans', 'theinhardtregular', 'Roboto', sans-serif;
@@ -251,8 +252,8 @@ strong {
 .long-button {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid #C9C9C9;
-    border-bottom: 1px solid #C9C9C9;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
     transition: all 0.3s ease;
     &:hover {
         opacity: 0.5;
@@ -444,7 +445,7 @@ input {
         border: none;
         background: none;
         padding-bottom: 5px;
-        border-bottom: 1px solid #C9C9C9;
+        border-bottom: 1px solid $grey;
         width: 100%;
     }
     &[type=submit] {
@@ -466,7 +467,7 @@ select {
 textarea {
     width: 100%;
     background: none;
-    border: 1px solid #C9C9C9;
+    border: 1px solid $grey;
     padding: 10px;
     overflow: auto;
     &:focus {
@@ -518,7 +519,7 @@ address {
 
 footer {
     .contact-module {
-        border-top: 1px solid #C9C9C9;
+        border-top: 1px solid $grey;
         margin-bottom: 30px;
         .row {
             div {
@@ -529,7 +530,7 @@ footer {
         }
     }
     .enquiries-module {
-        border-top: 1px solid #C9C9C9;
+        border-top: 1px solid $grey;
         margin-bottom: 30px;
         margin-bottom: 100px;
         .row {
@@ -761,7 +762,7 @@ End of Thumbnail Aspect Ratio
     height: 100vh;
     li {
         padding: 10px 0;
-        border-bottom: 1px solid #C9C9C9;
+        border-bottom: 1px solid $grey;
     }
 }
 

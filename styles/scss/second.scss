@@ -1,20 +1,28 @@
 /* Property of Kiluth | (c) 2016 Kiluth. */
 
+$black: #000;
+$white: #fff;
+$grey: #C9C9C9;
+$theinhardtlight: 'theinhardtlight', 'Open Sans', 'Roboto', sans-serif;
+$theinhardtregular: 'theinhardtregular', 'Open Sans', 'Roboto', sans-serif;
+$opensans: 'Open Sans', 'theinhardtregular', 'Roboto', sans-serif;
+$roboto: 'Roboto', 'Open Sans', 'theinhardtregular', sans-serif;
+
 * {
   color: white;
-  font-family: 'theinhardtregular', sans-serif;
+  font-family: $theinhardtregular;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: $black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #fff;
+  background-color: $white;
 }
 
 html {
-  background-color: #000;
+  background-color: $black;
 }
 
 body {
@@ -22,12 +30,12 @@ body {
 }
 
 h1 {
-  color: white;
+  color: $white;
 }
 
 a {
   position: relative;
-  color: white;
+  color: $white;
   text-align: inherit;
 }
 
@@ -45,7 +53,7 @@ a {
 }
 
 .screen p {
-  font-family: 'theinhardtlight', sans-serif;
+  font-family: $theinhardtlight;
   &.subtitle {
     position: absolute;
     bottom: 2.8125em;
@@ -53,7 +61,7 @@ a {
 }
 
 .thinline {
-  border-top: 0.0625em solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0.9375em 0;
 }
 
@@ -61,17 +69,28 @@ a {
 
 footer {
   .contact-module {
-    border-top: 0.0625em solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.875em;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+      .row {
+          div {
+              p {
+                  margin-top: 30px;
+                  color: $white;
+              }
+          }
+      }
   }
   .enquiries-module {
-    border-top: 0.0625em solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 1.875em;
-    margin-bottom: 6.25em;
-  }
-  .contact-module .row div p, .enquiries-module .row div p {
-    margin-top: 1.875em;
-    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+      .row {
+          div {
+              p {
+                  margin-top: 30px;
+                  color: $white;
+              }
+          }
+      }
   }
 }
 
@@ -79,28 +98,27 @@ input {
   &[type=text] {
     border: none;
     background: none;
-    padding-bottom: 0.3125em;
-    border-bottom: 0.0625em solid #C9C9C9;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $grey;
     width: 100%;
   }
   &[type=submit] {
     border: none;
     background: none;
   }
+    &:focus {
+        outline: none;
+    }
 }
 
 .footer-submit {
   position: relative;
-  top: -1.6875em;
+  top: -27px;
   float: right;
 }
 
-input:focus {
-  outline: none;
-}
-
 .scroll-to-top {
-  color: white;
+  color: $white;
 }
 
 .preview {
@@ -116,10 +134,10 @@ input:focus {
 }
 
 .divider {
-  border-top: 0.0625em solid white;
-  height: 0.0625em;
+  border-top: 1px solid $white;
+  height: 1px;
   width: 100%;
-  margin: 1.875em 0;
+  margin: 30px 0;
   opacity: 0.5;
 }
 
@@ -128,8 +146,11 @@ input:focus {
   transition: all 0.3s ease;
 }
 
-.submit-holder:hover .delete {
-  opacity: 1;
+.submit-holder {
+    &:hover,
+    .delete {
+        opacity: 1;
+    }
 }
 
 .space {
@@ -141,16 +162,16 @@ input:focus {
 }
 
 .menu span {
-  background-color: white;
+  background-color: $white;
 }
 
 .nav li a {
-  color: white;
+  color: $white;
 }
 
 .navbar-brand {
-  color: white;
+  color: $white;
   &:hover {
-    color: white;
+    color: $white;
   }
 }
