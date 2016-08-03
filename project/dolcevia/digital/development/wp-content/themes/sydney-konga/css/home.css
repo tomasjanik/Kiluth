@@ -1,0 +1,1175 @@
+body.home .site-header .col-md-4 > a {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
+
+.col-md-12, .col-md-6, .col-md-4, .col-md-2, .col-md-3, .col-md-8 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.container.content-wrapper {
+  width: 100%;
+}
+
+.container.content-wrapper > .row {
+  margin: 0px;
+}
+
+.container.content-wrapper .section .row {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section.section-home-banner {
+  margin-top: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/element1.png");
+}
+
+.section.section-home-banner .col-md-12 h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section.section-home-banner .col-md-12 img {
+  width: 300px;
+}
+
+.section.section-home-banner .col-md-12 .container-fluid {
+  padding-top: 250px;
+  max-width: 1200px;
+}
+
+.section.section-center {
+  text-align: center;
+}
+
+.section.section-2 .col-md-12 img {
+  width: 40px;
+}
+
+.section.section-2.section-products-2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section.section-3 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section.section-3 p.circle {
+  font-size: 80px;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section.section-3.section-products-3 {
+  width: 45%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section.section-4 {
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/home-section-4.png");
+  padding-top: 200px;
+  padding-bottom: 300px;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.section.section-4 .col-md-4 h1 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.section.section-5 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section.section-5 .col-md-12 h1 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.section.section-5.section-products-5 {
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/Pistachio.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 700px;
+  color: #FFFFFF;
+}
+
+.section.section-5.section-products-5 h1 {
+  color: #FFFFFF;
+}
+
+.section.section-6 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section.section-6.section-products-6 {
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section.section-6.section-products-8 {
+  width: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section.section-7 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/home-section-7.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.section.section-7.section-products {
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/products-section-7-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.section.section-7 .row .col-md-12 p {
+  margin-bottom: 0px;
+}
+
+.section.section-7 .row .form-container input {
+  color: #F6F6F6;
+  border: 1px solid #F6F6F6;
+  width: 320px;
+}
+
+.section.section-7 .row .form-container ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+
+.section.section-7 .row .email-subscribe-form {
+  border: 1px solid #F6F6F6;
+  color: #F6F6F6;
+  border-radius: 20px;
+  font-family: 'Prompt', sans-serif;
+  background-color: transparent;
+  margin-bottom: 0px;
+  max-height: 30px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container .email {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  margin-right: 100px;
+  max-height: 30px;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container .email:focus {
+  outline: none;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container a {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container a:after {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container a:hover {
+  color: #C9C9C9;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container .submit {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container .submit:after {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.section.section-7 .row .email-subscribe-form .form-container .submit:hover {
+  color: #C9C9C9;
+}
+
+.section.section-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section.section-footer .row h6 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.section.section-footer .row .col-md-2.col-right {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.section.section-footer .row .col-md-2.col-right a {
+  margin-left: 15px;
+}
+
+.section.section-footer .row a {
+  border-bottom: 0px solid #272727;
+}
+
+.section.section-footer .row a:hover {
+  border-bottom: 0px solid #272727;
+}
+
+.section.section-footer .row a.footer-social {
+  color: #A1E2A9;
+}
+
+.section.section-footer .row a.footer-social:hover {
+  color: #C9C9C9;
+}
+
+.section.section-footer .row img {
+  width: 200px;
+}
+
+.section.section-footer .row h6 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;
+}
+
+.section.section-footer .row .menu-footer {
+  margin-top: 10px;
+}
+
+.section.section-products-banner {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/leaves-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section.section-products-banner .col-md-12 h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.section.section-products-banner .col-md-12 img {
+  width: 300px;
+}
+
+.section.section-products-banner .col-md-12 .container-fluid {
+  padding-top: 300px;
+}
+
+.section.section-about-banner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section.section-about-banner .col-md-12 {
+  padding-top: 200px;
+}
+
+.section.section-about-banner .col-md-12 h1 {
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.section.section-contact-banner {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.section.section-contact-banner .col-md-12 {
+  padding-top: 200px;
+}
+
+.section.section-contact-banner .col-md-12 h1 {
+  font-weight: 400;
+  font-size: 100px;
+}
+
+.section.section-products-4 {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section.section-products-4 .container-fluid {
+  padding-right: 12.5%;
+  padding-left: 12.5%;
+}
+
+.section.section-products-4 .col-md-4 h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.section.section-products-4 .col-md-4.col-border-left-right {
+  border-right: 2px solid #C9C9C9;
+  border-left: 2px solid #C9C9C9;
+}
+
+.section.section-products-6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section.section-products-6 .container-fluid {
+  padding-right: 12.5%;
+  padding-left: 12.5%;
+}
+
+.section.section-products-6 .container-fluid.container-fluid-center {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.section.section-products-6 .container-fluid img {
+  width: 80px;
+}
+
+.section.section-products-6 .col-md-4 h1 {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.section.section-about-2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section.section-about-2 .col-md-10 {
+  max-width: 40%;
+}
+
+.section.section-contact-2 {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.section.section-contact-2 .col-md-4 p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section.section-contact-2 .col-md-4 p a {
+  border: 0px;
+  font-weight: bold;
+}
+
+.section.section-contact-2 .col-md-4 p a:hover {
+  border: 0px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table {
+  margin-bottom: 0px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container {
+  text-align: center;
+  width: 350px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container input, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container input {
+  color: #272727;
+  border: 1px solid #272727;
+  width: 300px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container ::-webkit-input-placeholder, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #272727;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form {
+  border: 1px solid #272727;
+  color: #272727;
+  border-radius: 20px;
+  font-family: 'Prompt', sans-serif;
+  background-color: transparent;
+  margin-bottom: 0px;
+  max-height: 30px;
+  width: 350px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container .email, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container .email {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  margin-right: 10px;
+  max-height: 30px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container .email:focus, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container .email:focus {
+  outline: none;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container a, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container a {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+  color: #272727;
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container a:after, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container a:after {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container a:hover, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container a:hover {
+  color: #C9C9C9;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container .submit, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container .submit {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container .submit:after, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container .submit:after {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form .form-container .submit:hover, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form .form-container .submit:hover {
+  color: #C9C9C9;
+}
+
+.section.section-contact-2 .col-md-8 a {
+  border: 0px;
+}
+
+.section.section-contact-2 .col-md-8 a:hover {
+  border: 0px;
+}
+
+.section.section-contact-2 .col-md-8 .p-subscribe {
+  margin-top: 30px;
+}
+
+.section .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.section .row a {
+  color: #272727;
+  border-bottom: 1px solid #272727;
+}
+
+.section .row a:hover {
+  color: #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+}
+
+.section .row p.p-home {
+  margin-bottom: 25px;
+}
+
+.section .row .col-md-6.columns-right, .section .row .col-md-12.columns-right {
+  text-align: right;
+}
+
+th, td {
+  border: 0px solid #333;
+  padding: 0px;
+  text-align: left;
+  height: 30px;
+}
+
+th p, td p {
+  margin-bottom: 0px;
+}
+
+th.text-bold, td.text-bold {
+  font-weight: bold;
+}
+
+th.text-header, td.text-header {
+  width: 150px;
+}
+
+article.page.type-page.status-publish.hentry {
+  padding-bottom: 0px;
+}
+
+@media only screen and (max-width: 991px) {
+  .site-header .btn-menu {
+    margin-top: 13px;
+  }
+}
+
+.site-header .container,
+.container.content-wrapper .section .row {
+  max-width: 1170px;
+}
+
+.site-header .container #mainnav li a {
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.site-header .container #mainnav li a b {
+  font-family: Prompt, sans-serif;
+  font-weight: 500;
+}
+
+.site-header .container #mainnav li:last-child {
+  padding-right: 0px;
+}
+
+.site-header .container #mainnav li:last-child a {
+  padding-right: 0px;
+}
+
+@media only screen and (max-width: 1060px) {
+  .site-header {
+    background-color: transparent !important;
+  }
+  .site-header .btn-menu {
+    display: none;
+  }
+  .site-header #mainnav-mobi {
+    top: 0px;
+    display: inline-block !important;
+    width: auto;
+    position: relative;
+    background-color: transparent;
+    float: right;
+  }
+  .site-header #mainnav-mobi li {
+    border-top: none;
+    display: inline-block;
+    text-align: right;
+  }
+  .site-header #mainnav-mobi li a {
+    color: black;
+    display: inline-block;
+    padding: 0px;
+    text-align: right;
+    font-weight: 300;
+    margin: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .site-header #mainnav-mobi li a b {
+    font-family: Prompt, sans-serif;
+    font-weight: 500;
+  }
+  .site-header #mainnav-mobi li a:hover {
+    color: gray;
+  }
+  .site-header #mainnav-mobi li:last-child a {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .site-header #mainnav-mobi li {
+    display: block;
+  }
+  .site-header #mainnav-mobi li a {
+    margin: 5px 0px;
+  }
+  .section.section-home-banner {
+    margin-top: 0px;
+  }
+  .section.section-home-banner .col-md-12 img {
+    width: 150px;
+  }
+  .section.section-home-banner .col-md-12 .container-fluid {
+    padding-top: 75px;
+  }
+  .section.section-home-banner .col-md-12 h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  .section.section-2 .col-md-12 img {
+    width: 40px;
+    height: auto;
+  }
+  .section.section-2.section-products-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-3 p.circle {
+    font-size: 65px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section.section-3.section-products-3 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section.section-5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-5.section-products-5 {
+    background-size: 500;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6.section-products-6 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6.section-products-8 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-7 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-7 .row .form-container input {
+    width: 250px;
+  }
+  .section.section-7 .row .email-subscribe-form {
+    width: 60%;
+  }
+  .section.section-7.section-products .row .form-container input {
+    width: 250px;
+  }
+  .section.section-7.section-products .row .email-subscribe-form {
+    width: 60%;
+  }
+  .section.section-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-footer .row img {
+    width: 130px;
+    height: auto;
+  }
+  .section.section-footer .row .col-md-5 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .section.section-products-banner {
+    background-repeat: no-repeat;
+    margin-top: -265px;
+  }
+  .section.section-products-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-about-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-about-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-about-2 .col-md-10 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section.section-contact-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-contact-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container {
+    width: 350px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container input, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container input {
+    width: 300px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form {
+    width: 350px;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  header.site-header .header-wrap .col-md-4.col-sm-8.col-xs-12 {
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
+  .site-header .container,
+  .container.content-wrapper .section .row {
+    max-width: 960px;
+  }
+  .section.section-3 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-3.section-products-3 {
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-4 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section.section-5 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-5.section-products-5 {
+    background-size: 500;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-6 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-6.section-products-6 {
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-6.section-products-8 {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-7 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-7 .row .form-container input {
+    width: 280px;
+  }
+  .section.section-7 .row .email-subscribe-form {
+    width: 45%;
+  }
+  .section.section-7.section-products .row .form-container input {
+    width: 280px;
+  }
+  .section.section-7.section-products .row .email-subscribe-form {
+    width: 45%;
+  }
+  .section.section-footer .row img {
+    width: 175px;
+    height: auto;
+  }
+  .section.section-products-4 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-about-2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .section.section-contact-2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .site-header .container,
+  .container.content-wrapper .section .row {
+    max-width: 640px;
+  }
+  .section.section-home-banner {
+    margin-top: 50px;
+  }
+  .section.section-home-banner .col-md-12 img {
+    width: 150px;
+  }
+  .section.section-home-banner .col-md-12 .container-fluid {
+    padding-top: 200px;
+  }
+  .section.section-home-banner .col-md-12 h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+  .section.section-2 .col-md-12 img {
+    width: 30px;
+    height: auto;
+  }
+  .section.section-2.section-products-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-3 p.circle {
+    font-size: 40px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section.section-3.section-products-3 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section.section-5 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-5.section-products-5 {
+    background-size: 500;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6.section-products-6 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6.section-products-8 {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-7 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-7 .row .form-container input {
+    width: 230px;
+  }
+  .section.section-7 .row .email-subscribe-form {
+    width: 60%;
+  }
+  .section.section-7.section-products .row .form-container input {
+    width: 230px;
+  }
+  .section.section-7.section-products .row .email-subscribe-form {
+    width: 60%;
+  }
+  .section.section-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-footer .row img {
+    width: 130px;
+    height: auto;
+  }
+  .section.section-footer .row .col-md-5 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .section.section-products-4 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-about-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-about-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-about-2 .col-md-10 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section.section-contact-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-contact-2 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container {
+    width: 350px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container input, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container input {
+    width: 300px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form {
+    width: 350px;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  header.site-header .header-wrap .col-md-4.col-sm-8.col-xs-12 {
+    z-index: 10;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .site-header .container,
+  .container.content-wrapper .section .row {
+    max-width: 320px;
+  }
+  .section.section-home-banner {
+    margin-top: 0px;
+  }
+  .section.section-home-banner .col-md-12 img {
+    width: 100px;
+  }
+  .section.section-home-banner .col-md-12 .container-fluid {
+    padding-top: 50px;
+  }
+  .section.section-home-banner .col-md-12 h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .section.section-2 .col-md-12 img {
+    width: 20px;
+    height: auto;
+  }
+  .section.section-2.section-products-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-3 p.circle {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .section.section-3.section-products-3 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .section.section-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-5.section-products-5 {
+    background-size: 400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-6 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-6.section-products-6 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-6.section-products-8 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-7 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .section.section-7 .row .form-container input {
+    width: 165px;
+  }
+  .section.section-7 .row .email-subscribe-form {
+    width: 100%;
+  }
+  .section.section-7.section-products .row .form-container input {
+    width: 165px;
+  }
+  .section.section-7.section-products .row .email-subscribe-form {
+    width: 100%;
+  }
+  .section.section-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .section.section-footer .row img {
+    width: 100px;
+    height: auto;
+  }
+  .section.section-footer .row .col-md-5 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .section.section-footer .row a {
+    font-size: 12px;
+  }
+  .section.section-products-banner {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-repeat: no-repeat;
+    margin-top: -265px;
+    background-size: contain;
+    z-index: 0;
+  }
+  .section.section-products-banner .col-md-12 h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .section.section-products-banner .col-md-12 img {
+    width: 300px;
+  }
+  .section.section-products-banner .col-md-12 .container-fluid {
+    padding-top: 300px;
+    z-index: 0;
+  }
+  .section.section-products-4 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-products-4 .col-md-4 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section.section-about-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-about-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-about-2 .col-md-10 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section.section-contact-banner .col-md-12 {
+    padding-top: 50px;
+  }
+  .section.section-contact-2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container {
+    width: 200px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container input, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container input {
+    width: 165px;
+  }
+  .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .email-subscribe-form, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .email-subscribe-form {
+    width: 200px;
+  }
+  p {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 24px !important;
+  }
+  h1 {
+    font-size: 34px !important;
+  }
+  header.site-header .header-wrap .col-md-4.col-sm-8.col-xs-12 {
+    z-index: 10;
+  }
+  th, td {
+    height: 15px;
+  }
+  th.text-header, td.text-header {
+    width: 100px;
+  }
+}
