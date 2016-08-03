@@ -212,8 +212,8 @@ strong {
             opacity: 0.5;
             transition: all 0.3s ease;
             &:hover,
-            .active,
-            .select.active,
+            &.active,
+            &.select.active,
             &:active {
                 opacity: 1;
             }
@@ -226,6 +226,9 @@ strong {
     cursor: pointer;
     opacity: 0.5;
     transition: all 0.3s ease;
+    &:hover {
+        opacity: 1;
+    }
 }
 
 

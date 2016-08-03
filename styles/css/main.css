@@ -198,9 +198,7 @@ strong {
   transition: all 0.3s ease;
 }
 
-.navbar-nav li .link:hover,
-.navbar-nav li .link .active,
-.navbar-nav li .link .select.active, .navbar-nav li .link:active {
+.navbar-nav li .link:hover, .navbar-nav li .link.active, .navbar-nav li .link.select.active, .navbar-nav li .link:active {
   opacity: 1;
 }
 
@@ -208,6 +206,10 @@ strong {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 /*Empty Spaces*/
