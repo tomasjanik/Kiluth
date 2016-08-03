@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 <!--Map--><link rel="stylesheet" href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css'>
-<!--CSS--><link rel="stylesheet" href="styles/main.css">
+<!--CSS--><link rel="stylesheet" href="styles/css/main.css">
 <!--jQuery--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!--Map--><script type="text/javascript" src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
 <!--ListJs--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>

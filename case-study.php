@@ -97,8 +97,8 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
 
     <head>
         <?php require_once('head.php');?>
-            <link rel="stylesheet" href="styles/third.css">
-            <link rel="stylesheet" href="styles/fourth.css">
+            <link rel="stylesheet" href="styles/css/third.css">
+            <link rel="stylesheet" href="styles/css/fourth.css">
             <style>
                 .thumbnail {
                     background-color: #<?php echo str_replace("#","",$themeColor); ?>;

@@ -4,7 +4,7 @@
 
     <head>
         <?php require_once('head.php');?>
-            <link rel="stylesheet" href="styles/third.css"> </head>
+            <link rel="stylesheet" href="styles/css/third.css"> </head>
 
     <body>
         <!--Map-->

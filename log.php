@@ -23,8 +23,8 @@ $date = $formatedDate;
 <html lang="en">
     <head>
         <?php require_once('head.php');?>
-        <link rel="stylesheet" href="styles/third.css">
-        <link rel="stylesheet" href="styles/fourth.css">
+        <link rel="stylesheet" href="styles/css/third.css">
+        <link rel="stylesheet" href="styles/css/fourth.css">
     </head>
 
     <body>

@@ -5,7 +5,7 @@
 
     <head>
         <?php require_once('head.php');?>
-            <link rel="stylesheet" href="styles/third.css">
+            <link rel="stylesheet" href="styles/css/third.css">
             <style>
                 .notfound {
                     font-size: 20pt;

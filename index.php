@@ -80,7 +80,7 @@
             </p>
             <!--                        -->
             <div class="row space">
-                <div class="col-md-9">
+                <div class="col-md-9 col-sm-8">
                     <p>Latest Projects</p>
                     <?php 
 $projects = $conn->query("SELECT * FROM projects ORDER BY ID DESC LIMIT 4");
@@ -101,7 +101,7 @@ while($row = $projects->fetch_assoc()) {
                     <div class="small-space"></div> <a class="long-button text-black text-smaller" href="projects.php">View Projects</a>
                     <div class="medium-space"></div>
                 </div>
-                <div class="col-md-3 logbook">
+                <div class="col-md-3 col-sm-4 logbook">
                     <p>Logbook</p>
                     <?php 
 $logs = $conn->query("SELECT * FROM logs ORDER BY date_published DESC LIMIT 6");

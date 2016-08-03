@@ -21,7 +21,7 @@
 
             <head>
                 <?php require_once('head.php');?>
-                    <link rel="stylesheet" href="styles/second.css">
+                    <link rel="stylesheet" href="styles/css/second.css">
             </head>
 
             <body>
