@@ -30,7 +30,7 @@
                     Coming Back Soon
                 </span>
                 <br />
-                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 110px; left: 0; right: 0; opacity: 0;"></div>
+                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 80px; left: 0; right: 0; opacity: 0;"></div>
             </div>
             <div id="fadein4" class="text-left" style="position: absolute; bottom: 5px; left: 10px;" hidden="hidden">
                 <p style="font-size: 14px;"> 
@@ -47,14 +47,14 @@
                 , loop: true
             });
             setTimeout(function () {
-                $('#fadein1').fadeIn(1000);
+                $("#fadein3").animate({top: '100px', bottom: '-70px', opacity: '1'}, { "duration": 1800, "easing": "swing" });
                 setTimeout(function () {
-                    $('#fadein2').fadeIn(1000);
+                    $('#fadein1').fadeIn(1000);
                     setTimeout(function () {
-                        $("#fadein3").animate({top: '120px', opacity: '1'}, { "duration": 1000, "easing": "linear" });
-                    }, 1000);
-                }, 1000);
-            }, 1000);
+                        $('#fadein2').fadeIn(1000);
+                    }, 800);
+                }, 800);
+            }, 800);
             
             setTimeout(function () {
                 $('#fadein4').fadeIn(1000);

@@ -50,12 +50,12 @@ function redirect_to_url($url)
 }
 
 if ($uploadOk == 1) {
-    if(empty($folder)) {
+    if (empty($folder)) {
         redirect_to_url('library.php');
-    } elseif($folder == 'public') {
+    } elseif ($folder == 'public') {
         redirect_to_url('library.php');
     } else {
-        redirect_to_url('library.php?data='.$folder);
+        redirect_to_url('library.php?data=' . $folder);
     }
 }
 ?>
