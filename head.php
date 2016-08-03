@@ -1,5 +1,5 @@
 <!--Property of Kiluth | (c) 2016 Kiluth-->
-<!--Alpha 1.0.1-->
+<!--Alpha 1.0.2-->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
