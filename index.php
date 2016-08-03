@@ -79,7 +79,7 @@
                 <br class="desktop-only" />solutions, forming sense of place for the clients and their end-users.
             </p>
             <!--                        -->
-            <div class="row space">
+            <div class="row medium-space">
                 <div class="col-md-9 col-sm-8">
                     <p>Latest Projects</p>
                     <?php 
