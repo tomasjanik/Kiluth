@@ -815,16 +815,16 @@ p {
     padding: inherit;
     border-bottom: inherit;
   }
+  .nav li a {
+    color: #fff;
+    padding-left: 0;
+    padding-right: 30px;
+  }
   .mobile-only {
     display: none;
   }
   .desktop-only {
     display: block;
-  }
-  .nav li a {
-    color: #fff;
-    padding-left: 0;
-    padding-right: 30px;
   }
   .navbar-brand {
     color: #fff;

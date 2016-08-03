@@ -873,6 +873,11 @@ p {
         li {
             padding: inherit;
             border-bottom: inherit;
+            a {
+                color: $white;
+                padding-left: 0;
+                padding-right: 30px;
+            }
         }
     }
     .mobile-only {
@@ -880,11 +885,6 @@ p {
     }
     .desktop-only {
         display: block;
-    }
-    .nav li a {
-        color: $white;
-        padding-left: 0;
-        padding-right: 30px;
     }
     .navbar-brand {
         color: $white;
