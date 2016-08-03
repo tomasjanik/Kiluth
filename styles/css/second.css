@@ -1,0 +1,156 @@
+/* Property of Kiluth | (c) 2016 Kiluth. */
+* {
+  color: white;
+  font-family: 'theinhardtregular', sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background: none;
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  position: relative;
+  color: white;
+  text-align: inherit;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.nav li .text-muted {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.nav li .text-muted:hover {
+  opacity: 1;
+}
+
+.screen p {
+  font-family: 'theinhardtlight', sans-serif;
+}
+
+.screen p.subtitle {
+  position: absolute;
+  bottom: 2.8125em;
+}
+
+.thinline {
+  border-top: 0.0625em solid rgba(255, 255, 255, 0.3);
+  margin: 0.9375em 0;
+}
+
+/*Footer*/
+footer .contact-module {
+  border-top: 0.0625em solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.875em;
+}
+
+footer .enquiries-module {
+  border-top: 0.0625em solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.875em;
+  margin-bottom: 6.25em;
+}
+
+footer .contact-module .row div p, footer .enquiries-module .row div p {
+  margin-top: 1.875em;
+  color: white;
+}
+
+input[type=text] {
+  border: none;
+  background: none;
+  padding-bottom: 0.3125em;
+  border-bottom: 0.0625em solid #C9C9C9;
+  width: 100%;
+}
+
+input[type=submit] {
+  border: none;
+  background: none;
+}
+
+.footer-submit {
+  position: relative;
+  top: -1.6875em;
+  float: right;
+}
+
+input:focus {
+  outline: none;
+}
+
+.scroll-to-top {
+  color: white;
+}
+
+.preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-height: X;
+  /* fallback */
+  margin-bottom: 0.6em;
+}
+
+.divider {
+  border-top: 0.0625em solid white;
+  height: 0.0625em;
+  width: 100%;
+  margin: 1.875em 0;
+  opacity: 0.5;
+}
+
+.delete {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.submit-holder:hover .delete {
+  opacity: 1;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu span {
+  background-color: white;
+}
+
+.nav li a {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+}

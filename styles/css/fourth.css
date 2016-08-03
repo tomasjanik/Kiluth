@@ -1,0 +1,48 @@
+/* Property of Kiluth | (c) 2016 Kiluth. */
+.no-overflow {
+  line-height: inherit;
+}
+
+.main {
+  padding-bottom: 30%;
+  min-height: 12.5em;
+}
+
+/*Last odd child of photography*/
+.photography:nth-last-child(1):nth-child(odd), .fullwidth {
+  width: 100%;
+}
+
+/*The box (The parent)*/
+.thumbnail-project-logo {
+  position: relative;
+}
+
+/*The image (The child)*/
+.project-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.project-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  max-height: 25%;
+}
+
+.order-control a {
+  display: inline-block;
+}
+
+.nobg {
+  background: none;
+  background-color: none;
+  box-shadow: none;
+}
