@@ -21,6 +21,10 @@ while($project = $projects->fetch_assoc()) {
 };
 $folder = $getfolder;
 
+if (!empty($_GET[theme])) {
+    $themeColor = $_GET['theme'];
+}
+
 //Replace main.png to thumbnail.png if main.png DOES NOT exist
 if (file_exists('project/'.$folder.'/main.png')) {
     $mainImg = "main";
