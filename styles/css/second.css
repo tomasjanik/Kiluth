@@ -1,1 +1,161 @@
-*{color:white;font-family:"theinhardtregular","Open Sans","Roboto",sans-serif}::-webkit-scrollbar-track{background-color:#000}::-webkit-scrollbar-thumb{background-color:#fff}html{background-color:#000}body{background:none}h1{color:#fff}a{position:relative;color:#fff;text-align:inherit}.navbar{padding:0;margin:0}.nav li .text-muted{opacity:0.5;transition:all 0.3s ease}.nav li .text-muted:hover{opacity:1}.screen p{font-family:"theinhardtlight","Open Sans","Roboto",sans-serif}.screen p.subtitle{position:absolute;bottom:2.8125em}.thinline{border-top:1px solid rgba(255,255,255,0.3);margin:0.9375em 0}footer .contact-module{border-top:1px solid rgba(255,255,255,0.5);margin-bottom:30px}footer .contact-module .row div p{margin-top:30px;color:#fff}footer .enquiries-module{border-top:1px solid rgba(255,255,255,0.5);margin-bottom:30px}footer .enquiries-module .row div p{margin-top:30px;color:#fff}input[type=text]{border:none;background:none;padding-bottom:5px;border-bottom:1px solid #C9C9C9;width:100%}input[type=submit]{border:none;background:none}input:focus{outline:none}.footer-submit{position:relative;top:-27px;float:right}.scroll-to-top{color:#fff}.preview{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;line-height:X;margin-bottom:0.6em}.divider{border-top:1px solid #fff;height:1px;width:100%;margin:30px 0;opacity:0.5}.delete{opacity:0;transition:all 0.3s ease}.submit-holder:hover,.submit-holder .delete{opacity:1}.space{margin-top:10px}.navbar{border-bottom:1px solid rgba(255,255,255,0.3)}.menu span{background-color:#fff}.nav li a{color:#fff}.navbar-brand{color:#fff}.navbar-brand:hover{color:#fff}
+/* Property of Kiluth | (c) 2016 Kiluth. */
+* {
+  color: white;
+  font-family: "theinhardtregular", "Open Sans", "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  background: none;
+}
+
+h1 {
+  color: #fff;
+}
+
+a {
+  position: relative;
+  color: #fff;
+  text-align: inherit;
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.nav li .text-muted {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.nav li .text-muted:hover {
+  opacity: 1;
+}
+
+.screen p {
+  font-family: "theinhardtlight", "Open Sans", "Roboto", sans-serif;
+}
+
+.screen p.subtitle {
+  position: absolute;
+  bottom: 2.8125em;
+}
+
+.thinline {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0.9375em 0;
+}
+
+/*Footer*/
+footer .contact-module {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+footer .contact-module .row div p {
+  margin-top: 30px;
+  color: #fff;
+}
+
+footer .enquiries-module {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+footer .enquiries-module .row div p {
+  margin-top: 30px;
+  color: #fff;
+}
+
+input[type=text] {
+  border: none;
+  background: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #C9C9C9;
+  width: 100%;
+}
+
+input[type=submit] {
+  border: none;
+  background: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.footer-submit {
+  position: relative;
+  top: -27px;
+  float: right;
+}
+
+.scroll-to-top {
+  color: #fff;
+}
+
+.preview {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-height: X;
+  /* fallback */
+  margin-bottom: 0.6em;
+}
+
+.divider {
+  border-top: 1px solid #fff;
+  height: 1px;
+  width: 100%;
+  margin: 30px 0;
+  opacity: 0.5;
+}
+
+.delete {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.submit-holder:hover,
+.submit-holder .delete {
+  opacity: 1;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu span {
+  background-color: #fff;
+}
+
+.nav li a {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
