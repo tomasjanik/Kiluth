@@ -72,8 +72,6 @@ nav {
     /* number of lines to show */
     line-height: 1.2;
     /* fallback */
-    max-height: X*1;
-    /* fallback */
     margin-bottom: 0.6em;
 }
 

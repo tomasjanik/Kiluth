@@ -55,7 +55,7 @@ nav {
     opacity: 1;
     transition: all 0.3s ease;
     font-weight: 100;
-    font-family: 'theinhardtregular', sans-serif;
+    font-family: 'theinhardtregular';
 }
 
 .navbar-nav li a:hover {
@@ -426,7 +426,14 @@ ol {
 }
 
 .preview {
-    display: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    line-height: X;
+    /* fallback */
 }
 
 
@@ -701,8 +708,16 @@ aspect ratio  | padding-bottom value (DOUBLE)
     padding-bottom: 62.5%;
 }
 
+.thumbnail.double {
+    padding-bottom: 125%;
+}
+
 .log-thumbnail {
     padding-bottom: 56.25%;
+}
+
+.log-thumbnail.double {
+    padding-bottom: 122%;
 }
 
 .thumbnail.main {
@@ -930,24 +945,6 @@ p {
     }
     .tablet-only {
         display: none;
-    }
-    .preview {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 5;
-        /* number of lines to show */
-        line-height: X;
-        /* fallback */
-        max-height: X*5;
-        /* fallback */
-    }
-    .thumbnail.double {
-        padding-bottom: 125%;
-    }
-    .log-thumbnail.double {
-        padding-bottom: 122%;
     }
 }
 

@@ -114,8 +114,6 @@ input:focus {
     /* number of lines to show */
     line-height: X;
     /* fallback */
-    max-height: X*1;
-    /* fallback */
     margin-bottom: 0.6em;
 }
 
