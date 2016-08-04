@@ -1,12 +1,6 @@
 /* Property of Kiluth | (c) 2016 Kiluth. */
 
-$black: #000;
-$white: #fff;
-$grey: #C9C9C9;
-$theinhardtlight: 'theinhardtlight', 'Open Sans', 'Roboto', sans-serif;
-$theinhardtregular: 'theinhardtregular', 'Open Sans', 'Roboto', sans-serif;
-$opensans: 'Open Sans', 'theinhardtregular', 'Roboto', sans-serif;
-$roboto: 'Roboto', 'Open Sans', 'theinhardtregular', sans-serif;
+@import 'var';
 
 * {
   color: white;
