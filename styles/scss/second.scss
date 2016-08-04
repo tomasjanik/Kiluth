@@ -146,8 +146,7 @@ input {
   transition: all 0.3s ease;
 }
 
-.submit-holder {
-    &:hover,
+.submit-holder:hover {
     .delete {
         opacity: 1;
     }
