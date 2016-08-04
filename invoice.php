@@ -39,6 +39,7 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
@@ -106,9 +107,9 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <p style="margin: 0; text-align: left; margin-left: 30px; padding-left: 30px; border-left: 1px solid #C9C9C9;">
                                        <span style="font-weight: 600; letter-spacing: 1px;">Contact</span>
                                        <br />
-                                        +66 93 124 2007
+                                       <a href="tel:+66 93 124 2007" style="text-decoration: none; color: inherit;">+66 93 124 2007</a>
                                         <br />
-                                        hello@kiluth.com
+                                        <a href="mailto:hello@kiluth.com" style="text-decoration: none; color: inherit;">hello@kiluth.com</a>
                                     </p>
                                 </td>
                             </tr>
@@ -150,9 +151,9 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <p style="margin: 0;"> <span style="opacity: 0.5;">Client</span>
                                         <br /> <span style=" font-size: 18px; font-weight: 400;"><?php echo $client; ?></span>
                                         <br />
-                                        <?php echo $_GET['email']; ?>
+                                        <a href="mailto:<?php echo $_GET['email']; ?>" style="text-decoration: none; color: inherit;"><?php echo $_GET['email']; ?></a>
                                             <br />
-                                            <?php echo str_replace("(","(+",$_GET['tel']); ?>
+                                            <a href="tel:<?php echo str_replace("(","(+",$_GET['tel']); ?>" style="text-decoration: none; color: inherit;"><?php echo str_replace("(","(+",$_GET['tel']); ?></a>
                                                 <br />
                                                 <br />
                                                 <?php echo $_GET['location']; ?>
@@ -160,8 +161,11 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                 </td>
                                 <td style="font-size: 0;" width="10"> &nbsp; </td>
                                 <td width="30%" valign="top">
-                                    <p style="margin: 0; text-align: right;"> <span style="opacity: 0.5;">Date:</span>
-                                        <br /> Due Date: </p>
+                                    <p style="margin: 0; text-align: right; opacity: 0.5;"> 
+                                        Date:
+                                        <br /> 
+                                        Due Date: 
+                                    </p>
                                 </td>
                                 <td style="font-size: 0;" width="10"> &nbsp; </td>
                                 <td width="30%" valign="top">
