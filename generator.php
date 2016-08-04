@@ -115,7 +115,7 @@ if ($_GET['generated'] == "generated") {
                         <p>
                             Tel
                         </p>
-                        <input type="text" name="tel" value="<?php echo $_GET['tel']; ?>" placeholder="(01) 99 999 9999">
+                        <input type="text" name="tel" value="<?php echo $_GET['tel']; ?>" placeholder="(66) 01 234 5678">
                         <div class="small-space"></div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
@@ -127,7 +127,7 @@ if ($_GET['generated'] == "generated") {
                     </div>
                     <!--Clearfix-->
                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-xs-6 col-sm-3">
+                    <div class="col-md-3 col-sm-3">
                         <p>
                             Location
                         </p>
