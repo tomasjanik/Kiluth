@@ -28,7 +28,7 @@ if (!empty($_GET['status'])) {
     $status = "&status=" . $_GET['status'];
 }
 
-$link = "http://kiluth.com/pr/invoices/invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $item1 . $item2 . $item3 . $item4 . $item5 . $item6 . $status . "&name=" . $_GET['name'] ;
+$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $item1 . $item2 . $item3 . $item4 . $item5 . $item6 . $status . "&name=" . $_GET['name'] ;
 
 if ($_GET['status'] == "Paid") {
     $paid == "checked";
