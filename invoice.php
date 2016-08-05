@@ -18,7 +18,8 @@ while($project = $projects->fetch_assoc()) {
     $themeColor = $project[themeColor];
 };
 
-$code = $ID . $name[0] . $region[0] . $location[0] . $tags[0];
+$email = $_GET['email'];
+$code = "#" . $ID . $name[0] . $region[0] . $location[0] . $email[0];
 $date = $_GET['date'];
 $duedate = $_GET['due'];
 
@@ -135,8 +136,8 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                 </td>
                                 <td style="font-size: 0;" width="10"> &nbsp; </td>
                                 <td width="30%" valign="top">
-                                    <p style="margin: 0; text-align: right;"> #
-                                        <?php echo $code; ?>
+                                    <p style="margin: 0; text-align: right;">
+                                       <?php echo $code; ?>
                                     </p>
                                 </td>
                             </tr>
