@@ -143,8 +143,8 @@ p {
 }
 
 .section.section-7 {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/07/home-section-7.jpg");
   background-position: center center;
   background-size: cover;
@@ -235,8 +235,8 @@ p {
 }
 
 .section.section-footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section.section-footer .row h6 {
@@ -263,6 +263,7 @@ p {
 
 .section.section-footer .row a.footer-social {
   color: #A1E2A9;
+  font-weight: 100;
 }
 
 .section.section-footer .row a.footer-social:hover {
@@ -348,8 +349,8 @@ p {
 }
 
 .section.section-products-4 .col-md-4.col-border-left-right {
-  border-right: 2px solid #C9C9C9;
-  border-left: 2px solid #C9C9C9;
+  border-right: 1px solid #777;
+  border-left: 1px solid #777;
 }
 
 .section.section-products-6 {
@@ -405,6 +406,10 @@ p {
 
 .section.section-contact-2 .col-md-8 .table-responsive table {
   margin-bottom: 0px;
+}
+
+.section.section-contact-2 .col-md-8 .table-responsive table tbody tr {
+  margin-bottom: 10px;
 }
 
 .section.section-contact-2 .col-md-8 .table-responsive table tbody tr th .form-container, .section.section-contact-2 .col-md-8 .table-responsive table tbody tr td .form-container {
@@ -708,8 +713,8 @@ article.page.type-page.status-publish.hentry {
     width: 60%;
   }
   .section.section-footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .section.section-footer .row img {
     width: 130px;
@@ -1155,7 +1160,7 @@ article.page.type-page.status-publish.hentry {
     width: 200px;
   }
   p {
-    font-size: 10px;
+    font-size: 13px;
   }
   h3 {
     font-size: 24px !important;
