@@ -33,8 +33,8 @@ if (!empty($_GET['location'])) {
     $location = $_GET['location'];
 }
 
-if (!empty($_GET['section'])) {
-    $business = $_GET['section'];
+if (!empty($_GET['sector'])) {
+    $business = $_GET['sector'];
 }
 
 //Replace main.png to thumbnail.png if main.png DOES NOT exist
