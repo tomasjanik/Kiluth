@@ -14,6 +14,14 @@
             <!--Howler-->
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
             <style>
+                * {
+                    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased !important;
+                    -moz-font-smoothing: antialiased !important;
+                    text-rendering: optimizelegibility !important;
+                    letter-spacing: .03em;
+                    }
                 html,
                 body {
                     background-color: #f8f8f8;
