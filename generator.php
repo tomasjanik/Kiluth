@@ -71,11 +71,8 @@ if ($_GET['generated'] == "generated") {
 <body>
    <?php require_once('header.php');?>
    
-       <div class="container space step3-project <?php echo $project_step3;?>">
-          <div class="space"></div>
-           <h2 class="text-center">Invoice Generator</h2>
-            <div class="medium-space"></div>
-            <div class="row">
+       <div class="container step3-project <?php echo $project_step3;?>">
+            <div class="row medium-space">
                 <form action="generator.php" method="get">
                     <!---->
                     <div class="col-xs-6 col-sm-3">
