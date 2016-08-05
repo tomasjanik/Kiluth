@@ -6,12 +6,12 @@
     font-family: $theinhardtlight;
     overflow-x: hidden;
     color: $black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-    /* 16 * 0.0625 = 1px */
-    /* 16 * 0.03125 = 0.5px */
-    letter-spacing: 0.03125em;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: .03em;
 }
 
 

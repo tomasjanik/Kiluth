@@ -1,7 +1,7 @@
 /* Property of Kiluth | (c) 2016 Kiluth. */
 /*Navbar*/
 .menu span {
-  background-color: #000;
+  background-color: #333;
 }
 
 nav {
@@ -19,27 +19,27 @@ nav {
 }
 
 .navbar-nav li a {
-  color: #000;
+  color: #333;
   position: relative;
 }
 
 .navbar-nav li a:hover {
   background-color: inherit;
-  color: #000;
+  color: #333;
 }
 
 .navbar-nav li a:focus {
   background-color: inherit;
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 
 .navbar-brand {
-  color: #000;
+  color: #333;
 }
 
 .navbar-brand:hover {
-  color: #000;
+  color: #333;
 }
 
 .nav {
@@ -58,7 +58,7 @@ nav {
 }
 
 .link-ani::after {
-  background: #000;
+  background: #333;
 }
 
 .preview {

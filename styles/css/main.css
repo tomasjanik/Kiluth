@@ -2,13 +2,13 @@
 * {
   font-family: "theinhardtlight", "Open Sans", "Roboto", sans-serif;
   overflow-x: hidden;
-  color: #000;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #333;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-  /* 16 * 0.0625 = 1px */
-  /* 16 * 0.03125 = 0.5px */
-  letter-spacing: 0.03125em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
 }
 
 /*Scrollbar*/
@@ -21,7 +21,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: #333;
 }
 
 /*Filter*/
@@ -43,7 +43,7 @@ nav {
 }
 
 .navbar-nav li a {
-  color: #000;
+  color: #333;
   position: relative;
   opacity: 1;
   transition: all 0.3s ease;
@@ -71,7 +71,7 @@ nav {
 
 .navbar-brand,
 .logo {
-  color: #000;
+  color: #333;
   font-weight: 600;
   font-family: "Open Sans", "theinhardtregular", "Roboto", sans-serif;
   letter-spacing: 1px;
@@ -180,7 +180,7 @@ strong {
 }
 
 .text-black {
-  color: #000;
+  color: #333;
 }
 
 .link-hover {
@@ -447,7 +447,7 @@ textarea:focus {
   border-radius: inherit;
   border: 1px solid rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  color: #000;
+  color: #333;
   padding: 2px 10px;
 }
 
@@ -691,7 +691,7 @@ End of Thumbnail Aspect Ratio
   width: 100%;
   display: block;
   margin-bottom: 5px;
-  background-color: #000;
+  background-color: #333;
   transition: all 0.3s ease;
 }
 
@@ -915,7 +915,7 @@ p {
     width: 100%;
   }
   .scroll-to-top {
-    color: #000;
+    color: #333;
     position: fixed;
     z-index: 1000;
     top: 50%;
