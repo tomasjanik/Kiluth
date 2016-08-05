@@ -21,8 +21,20 @@ while($project = $projects->fetch_assoc()) {
 };
 $folder = $getfolder;
 
-if (!empty($_GET[theme])) {
+if (!empty($_GET['theme'])) {
     $themeColor = $_GET['theme'];
+}
+
+if (!empty($_GET['name'])) {
+    $name = $_GET['name'];
+}
+
+if (!empty($_GET['location'])) {
+    $location = $_GET['location'];
+}
+
+if (!empty($_GET['section'])) {
+    $business = $_GET['section'];
 }
 
 //Replace main.png to thumbnail.png if main.png DOES NOT exist
