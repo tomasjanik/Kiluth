@@ -78,6 +78,11 @@ nav {
   font-size: 25px;
 }
 
+.navbar-brand:hover,
+.logo:hover {
+  color: #333;
+}
+
 .nav.second li a {
   padding: 15px 0;
 }
@@ -809,7 +814,12 @@ p {
   .desktop-only {
     display: block;
   }
-  .navbar-brand {
+  .navbar-brand,
+  .logo {
+    color: #fff;
+  }
+  .navbar-brand:hover,
+  .logo:hover {
     color: #fff;
   }
   .screen {

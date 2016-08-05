@@ -1,7 +1,6 @@
 /* Property of Kiluth | (c) 2016 Kiluth. */
 
 @import 'var';
-
 * {
     font-family: $theinhardtlight;
     overflow-x: hidden;
@@ -81,6 +80,9 @@ nav {
     font-family: $opensans;
     letter-spacing: 1px;
     font-size: 25px;
+    &:hover {
+        color: $black;
+    }
 }
 
 .nav.second {
@@ -211,7 +213,6 @@ strong {
             &:active {
                 opacity: 1;
             }
-            
         }
     }
 }
@@ -677,6 +678,7 @@ footer {
     background-size: cover;
 }
 
+
 /*
 aspect ratio  | padding-bottom value (DOUBLE)
 --------------|----------------------
@@ -716,6 +718,7 @@ aspect ratio  | padding-bottom value (DOUBLE)
         padding-bottom: 122%;
     }
 }
+
 
 /*
 End of Thumbnail Aspect Ratio
@@ -883,8 +886,12 @@ p {
     .desktop-only {
         display: block;
     }
-    .navbar-brand {
+    .navbar-brand,
+    .logo {
         color: $white;
+        &:hover {
+            color: $white;
+        }
     }
     .screen {
         position: absolute;
