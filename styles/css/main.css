@@ -217,6 +217,10 @@ strong {
   opacity: 1;
 }
 
+.list-unstyled li {
+  margin-bottom: 20px;
+}
+
 /*Empty Spaces*/
 .space {
   margin-top: 80px;
@@ -257,6 +261,8 @@ strong {
   vertical-align: middle;
   margin-left: 0;
   margin-right: 3px;
+  position: relative;
+  top: -2px;
 }
 
 /*Animations*/
