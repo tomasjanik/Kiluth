@@ -16,10 +16,6 @@ Poom Pengcharoen
 
 Ratchapon Songamonsiri
 
-Jaturong Nandakwang
-
-WeAreCheers AU
-
 ## Website
 
 http://kiluth.com/
@@ -30,7 +26,9 @@ http://kiluth.com/
 
 hello@kiluth.com
 
-Kiluth Studio 11/45 Nirvana Kalapapruk Road Bangkunthien Jomthong Bangkok TH 10150
+Kiluth Studio 11/45 Nirvana Kalapapruk Road 
+
+Bangkunthien Jomthong Bangkok TH 10150
 
 ## New Project
 
