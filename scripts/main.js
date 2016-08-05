@@ -76,3 +76,7 @@ $(document).ready(function () {
     //Tooltip
     $('[data-toggle="tooltip"]').tooltip();
 });
+
+$(window).on("load", function() {
+    
+});
