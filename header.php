@@ -93,6 +93,22 @@
             <li>
                 <a class="link-hover" href="contact.php">Contact</a>
             </li>
+            <?php
+            if ($_SESSION['admin'] == "yes") {
+                ?>
+                <li>
+                    <a class="link-hover" href="admin.php">Admin</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="library.php">Library</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="generator.php">Invoice</a>
+                </li>
+                <li>
+                    <a class="link-hover" href="database" target="_blank">Database</a>
+                </li>
+            <?php } ?>
         </ul>
 
     </div>
