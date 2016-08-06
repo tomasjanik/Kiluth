@@ -21,6 +21,19 @@ while($project = $projects->fetch_assoc()) {
 };
 $folder = $getfolder;
 
+//Placeholder text substitution
+if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremipsum'] == "true") {
+    $longp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque cu.<br /><br />Erant populo periculis eu nec, eirmod delicatissimi et nec. Ne sea nobis nominavi mediocrem, dicat mucius conclusionemque ea has. Virtute accusata antiopam mea ei, vivendum dissentiunt et nec, eum ei accumsan offendit pericula.";
+    
+    $shortp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque cu.";
+    
+    $description = $longp;
+    $digital = $shortp;
+    $identity = $shortp;
+    $prints = $shortp;
+    $photography = $shortp;
+}
+
 if (!empty($_GET['theme'])) {
     $themeColor = $_GET['theme'];
 }
@@ -137,7 +150,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                     <div class="col-md-6">
                         <h3 class="no-overflow"><?php echo $name; ?></h3>
                         <br />
-                        <p class="text-smaller">
+                        <p>
                             Sector
                             <br />
                             <span class="text-muted">
