@@ -25,7 +25,7 @@ $folder = $getfolder;
 if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremipsum'] == "true") {
     $longp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque cu.<br /><br />Erant populo periculis eu nec, eirmod delicatissimi et nec. Ne sea nobis nominavi mediocrem, dicat mucius conclusionemque ea has. Virtute accusata antiopam mea ei, vivendum dissentiunt et nec, eum ei accumsan offendit pericula.";
     
-    $shortp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque cu.";
+    $shortp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque.";
     
     $description = $longp;
     $digital = $shortp;
@@ -40,14 +40,20 @@ if (!empty($_GET['theme'])) {
 
 if (!empty($_GET['name'])) {
     $name = $_GET['name'];
+} else {
+    $name = ucwords($_GET['project']);
 }
 
 if (!empty($_GET['location'])) {
     $location = $_GET['location'];
+} else {
+    $location = "Bangkok";
 }
 
 if (!empty($_GET['sector'])) {
     $business = $_GET['sector'];
+} else {
+    $business = "Sample Business";
 }
 
 //Replace main.png to thumbnail.png if main.png DOES NOT exist

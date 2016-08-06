@@ -89,6 +89,37 @@ renderClients($pupil[ID], $pupil[name], $pupil[subtitle], $pupil[business], $pup
                     <i class="view-size fa fa-th-large widescreen-only"></i>
                     <div class="container">
                         <div class="row projects-holder">
+                           
+                           <?php 
+if (!empty($_GET['project'])) {
+$link = "project=". $_GET['project'] ."&placeholder=true";
+    ?>
+
+                                <a href="case-study.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
+                                    <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
+                                        <div class="screen desktop-only">
+                                            <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo ucwords($_GET['project']); ?>
+                                            </p>
+                                            <p class="text-muted subtitle preview text-smaller hide" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo ucwords($_GET['project']); ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-only">
+                                        <p>
+                                            <span class="name preview" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo ucwords($_GET['project']); ?>
+                                            </span>
+                                           <span class="text-muted preview text-smaller" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum" data-delay='{"show":"2000"}'>
+                                               <?php echo ucwords($_GET['project']); ?>
+                                           </span>
+                                        </p>
+                                        <div class="small-space"></div>
+                                    </div>
+                                </a>
+                                <?php }; ?>
+                           
                             <?php 
 $projects = $conn->query("SELECT * FROM projects ORDER BY ID DESC");
 while($row = $projects->fetch_assoc()) {
@@ -118,10 +149,7 @@ while($row = $projects->fetch_assoc()) {
                                         <div class="small-space"></div>
                                     </div>
                                 </a>
-                                <?php
-};
-
-?>
+                                <?php }; ?>
                         </div>
                     </div>
                     <?php require_once('footer.php');?>

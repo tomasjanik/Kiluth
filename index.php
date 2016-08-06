@@ -82,6 +82,24 @@
             <div class="row medium-space">
                 <div class="col-md-9 col-sm-8">
                     <p>Latest Projects</p>
+                    
+                    <?php 
+if (!empty($_GET['project'])) {
+$link = "project=". $_GET['project'] ."&placeholder=true";
+?>
+                    <a href="case-study.php?<?php echo $link; ?>">
+                        <div class="project small-space">
+                            <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2"></div>
+                            <p class="title">
+                                <?php echo ucwords($_GET['project']); ?>
+                            </p>
+                            <p class="subtitle text-muted">
+                                <?php echo ucwords($_GET['project']); ?>
+                            </p>
+                        </div>
+                    </a>
+                    <?php }; ?>
+                    
                     <?php 
 $projects = $conn->query("SELECT * FROM projects ORDER BY ID DESC LIMIT 4");
 while($row = $projects->fetch_assoc()) {
