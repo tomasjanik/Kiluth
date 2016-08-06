@@ -32,28 +32,28 @@ if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremip
     $identity = $shortp;
     $prints = $shortp;
     $photography = $shortp;
+    
+    if (!empty($_GET['name'])) {
+        $name = $_GET['name'];
+    } else {
+        $name = ucwords($_GET['project']);
+    }
+
+    if (!empty($_GET['location'])) {
+        $location = $_GET['location'];
+    } else {
+        $location = "Bangkok";
+    }
+
+    if (!empty($_GET['sector'])) {
+        $business = $_GET['sector'];
+    } else {
+        $business = "Sample Business";
+    }
 }
 
 if (!empty($_GET['theme'])) {
     $themeColor = $_GET['theme'];
-}
-
-if (!empty($_GET['name'])) {
-    $name = $_GET['name'];
-} else {
-    $name = ucwords($_GET['project']);
-}
-
-if (!empty($_GET['location'])) {
-    $location = $_GET['location'];
-} else {
-    $location = "Bangkok";
-}
-
-if (!empty($_GET['sector'])) {
-    $business = $_GET['sector'];
-} else {
-    $business = "Sample Business";
 }
 
 //Replace main.png to thumbnail.png if main.png DOES NOT exist
