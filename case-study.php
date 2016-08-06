@@ -328,12 +328,12 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                 }
             ?>
                 <div class="container medium-space order-control">
-                    <a href="case-study.php?project=<?php echo $prevFolder; ?>" class="link-hover previous-project style-tooltip" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='fluid-image' style='margin: 0 0; padding-bottom: 62.5%; width: 18em; display: block; background-image: url(project/<?php echo $prevFolder ;?>/thumbnail.png);'></div>">
+                    <a href="casestudy.php?project=<?php echo $prevFolder; ?>" class="link-hover previous-project style-tooltip" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='fluid-image' style='margin: 0 0; padding-bottom: 62.5%; width: 18em; display: block; background-image: url(project/<?php echo $prevFolder ;?>/thumbnail.png);'></div>">
                         <p>
                             Previous Project
                         </p>
                     </a>
-                    <a href="case-study.php?project=<?php echo $nextFolder; ?>" class="link-hover previous-project pull-right style-tooltip" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='fluid-image' style='margin: 0 0; padding-bottom: 62.5%; width: 18em; display: block; background-image: url(project/<?php echo $nextFolder ;?>/thumbnail.png);'></div>">
+                    <a href="casestudy.php?project=<?php echo $nextFolder; ?>" class="link-hover previous-project pull-right style-tooltip" data-toggle="tooltip" data-placement="top" data-html="true" title="<div class='fluid-image' style='margin: 0 0; padding-bottom: 62.5%; width: 18em; display: block; background-image: url(project/<?php echo $nextFolder ;?>/thumbnail.png);'></div>">
                         <p>
                             Next Project
                         </p>
@@ -366,7 +366,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                             ?>
 
                                 <div class="col-xs-6 col-sm-3">
-                                    <a href="case-study.php?project=<?php echo ${'recent'.$all.'Folder'}; ?>">
+                                    <a href="casestudy.php?project=<?php echo ${'recent'.$all.'Folder'}; ?>">
                                         <div class="thumbnail log-thumbnail" style="background-image: url(project/<?php echo ${'recent'.$all.'Folder'}; ?>/thumbnail.png);"></div>
                                                <span class="preview text-white text-normal" data-toggle="tooltip" data-placement="top" title="<?php echo ${'recent'.$all.'Name'}; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo ${'recent'.$all.'Name'} ;?>
@@ -377,7 +377,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                                     <div class="small-space"></div>
                                 </div>
                                 <div class="col-xs-6 col-sm-3">
-                                    <a href="case-study.php?project=<?php echo ${'recent'.$allminusone.'Folder'}; ?>">
+                                    <a href="casestudy.php?project=<?php echo ${'recent'.$allminusone.'Folder'}; ?>">
                                         <div class="thumbnail log-thumbnail" style="background-image: url(project/<?php echo ${'recent'.$allminusone.'Folder'}; ?>/thumbnail.png);"></div>
                                            <span class="preview text-white text-normal" data-toggle="tooltip" data-placement="top" title="<?php echo ${'recent'.$allminusone.'Name'}; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo ${'recent'.$allminusone.'Name'} ;?>
@@ -389,7 +389,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                                 </div>
                                 <div class="clearfix visible-xs-block"></div>
                                 <div class="col-xs-6 col-sm-3">
-                                    <a href="case-study.php?project=<?php echo ${'recent'.$allminustwo.'Folder'}; ?>">
+                                    <a href="casestudy.php?project=<?php echo ${'recent'.$allminustwo.'Folder'}; ?>">
                                         <div class="thumbnail log-thumbnail" style="background-image: url(project/<?php echo ${'recent'.$allminustwo.'Folder'}; ?>/thumbnail.png);"></div>
                                                <span class="preview text-white text-normal" data-toggle="tooltip" data-placement="top" title="<?php echo ${'recent'.$allminustwo.'Name'}; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo ${'recent'.$allminustwo.'Name'} ;?>
@@ -401,7 +401,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                                     <div class="small-space"></div>
                                 </div>
                                 <div class="col-xs-6 col-sm-3">
-                                    <a href="case-study.php?project=<?php echo ${'recent'.$allminusthree.'Folder'}; ?>">
+                                    <a href="casestudy.php?project=<?php echo ${'recent'.$allminusthree.'Folder'}; ?>">
                                         <div class="thumbnail log-thumbnail" style="background-image: url(project/<?php echo ${'recent'.$allminusthree.'Folder'}; ?>/thumbnail.png);"></div>
                                             <span class="preview text-white text-normal" data-toggle="tooltip" data-placement="top" title="<?php echo ${'recent'.$allminusthree.'Name'}; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo ${'recent'.$allminusthree.'Name'} ;?>

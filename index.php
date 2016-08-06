@@ -47,7 +47,7 @@
                         <div class="container hide-toggle">
                             <h1 class="title space double text-white roboto"><?php echo $slide[text]; ?></h1>
                             <div class="medium-space"></div>
-                            <a href="case-study.php?project=<?php echo $main; ?>">
+                            <a href="casestudy.php?project=<?php echo $main; ?>">
                                 <p class="text-white text-smaller link-hover">View Case Study</p>
                             </a>
                         </div>
@@ -87,7 +87,7 @@
 if (!empty($_GET['project'])) {
 $link = "project=". $_GET['project'] ."&placeholder=true";
 ?>
-                    <a href="case-study.php?<?php echo $link; ?>">
+                    <a href="casestudy.php?<?php echo $link; ?>">
                         <div class="project small-space">
                             <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2"></div>
                             <p class="title">
@@ -104,7 +104,7 @@ $link = "project=". $_GET['project'] ."&placeholder=true";
 $projects = $conn->query("SELECT * FROM projects ORDER BY ID DESC LIMIT 4");
 while($row = $projects->fetch_assoc()) {
 ?>
-                    <a href="case-study.php?project=<?php echo $row[folder]; ?>">
+                    <a href="casestudy.php?project=<?php echo $row[folder]; ?>">
                         <div class="project small-space">
                             <div class="thumbnail" style="background-image: url(project/<?php echo $row[folder]; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $row[folder]; ?>/thumbnail.png) 1x, url(project/<?php echo $row[folder]; ?>/thumbnail@2x.png) 2x)" data-rjs="2"></div>
                             <p class="title">

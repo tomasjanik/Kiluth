@@ -95,7 +95,7 @@ if (!empty($_GET['project'])) {
 $link = "project=". $_GET['project'] ."&placeholder=true";
     ?>
 
-                                <a href="case-study.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
+                                <a href="casestudy.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
                                     <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
                                         <div class="screen desktop-only">
                                             <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
@@ -126,7 +126,7 @@ while($row = $projects->fetch_assoc()) {
 //renderProjects($row[ID], $row[name], $row[subtitle], $row[business], $row[location], $row[region], $row[folder], $row[description], $row[identity], $row[prints], $row[digital], $row[client], $row[tags]);
     ?>
 
-                                <a href="case-study.php?project=<?php echo $row[folder]; ?>" class="col-sm-3 project-view item <?php echo $row[client]; ?> <?php echo $row[tags]; ?> <?php echo $row[folder]; ?>">
+                                <a href="casestudy.php?project=<?php echo $row[folder]; ?>" class="col-sm-3 project-view item <?php echo $row[client]; ?> <?php echo $row[tags]; ?> <?php echo $row[folder]; ?>">
                                     <div class="thumbnail" style="background-image: url(project/<?php echo $row[folder]; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $row[folder]; ?>/thumbnail.png) 1x, url(project/<?php echo $row[folder]; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
                                         <div class="screen desktop-only">
                                             <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $row[name]; ?>" data-delay='{"show":"2000"}'>
