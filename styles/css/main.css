@@ -188,23 +188,15 @@ strong {
   color: #333;
 }
 
-.link-hover {
+.link-hover,
+.link-hover b {
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-.link-hover:hover {
+.link-hover:hover,
+.link-hover b:hover {
   opacity: 0.5;
-}
-
-.navbar-nav li .link {
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.3s ease;
-}
-
-.navbar-nav li .link:hover, .navbar-nav li .link.active, .navbar-nav li .link.select.active, .navbar-nav li .link:active {
-  opacity: 1;
 }
 
 .link {
@@ -213,7 +205,7 @@ strong {
   transition: all 0.3s ease;
 }
 
-.link:hover {
+.link:hover, .link.active, .link.select.active, .link:active {
   opacity: 1;
 }
 
@@ -412,6 +404,8 @@ input,
 select,
 textarea {
   border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 input[type=text], input[type=password] {
@@ -420,6 +414,10 @@ input[type=text], input[type=password] {
   padding-bottom: 5px;
   border-bottom: 1px solid #C9C9C9;
   width: 100%;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-bottom: 1px solid #0ae276;
 }
 
 input[type=submit] {
@@ -447,6 +445,7 @@ textarea {
 
 textarea:focus {
   outline: none;
+  border: 1px solid #0ae276;
 }
 
 .thinline {
@@ -691,6 +690,7 @@ End of Thumbnail Aspect Ratio
 }
 
 .menu {
+  cursor: pointer;
   width: 20px;
   display: inline-block;
   margin: 20px 0;
