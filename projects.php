@@ -26,7 +26,7 @@
 
             <body>
                 <?php require_once('header.php');?>
-                    <nav class="navbar desktop-only">
+                    <nav class="navbar tablet-and-up">
                         <div class="container">
                             <ul class="nav navbar-nav second">
                                 <li><a class="link active select select-all" href="#">All</a></li>
@@ -41,7 +41,7 @@
                             </ul>
                         </div>
                     </nav>
-                    <div class="medium-space desktop-only"></div>
+                    <div class="medium-space tablet-and-up"></div>
                     <div class="small-space mobile-only"></div>
                     <div class="container list-clients collapse">
                         <div class="row">
@@ -82,7 +82,7 @@ renderClients($pupil[ID], $pupil[name], $pupil[subtitle], $pupil[business], $pup
 ?>
                             </p>
                         </div>
-                        <div class="medium-space desktop-only"></div>
+                        <div class="medium-space tablet-and-up"></div>
                         <div class="small-space mobile-only"></div>
                     </div>
 
@@ -97,7 +97,7 @@ $link = "project=". $_GET['project'] ."&placeholder=true";
 
                                 <a href="casestudy.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
                                     <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
-                                        <div class="screen desktop-only">
+                                        <div class="screen tablet-and-up">
                                             <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo ucwords($_GET['project']); ?>
                                             </p>
@@ -128,7 +128,7 @@ while($row = $projects->fetch_assoc()) {
 
                                 <a href="casestudy.php?project=<?php echo $row[folder]; ?>" class="col-sm-3 project-view item <?php echo $row[client]; ?> <?php echo $row[tags]; ?> <?php echo $row[folder]; ?>">
                                     <div class="thumbnail" style="background-image: url(project/<?php echo $row[folder]; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $row[folder]; ?>/thumbnail.png) 1x, url(project/<?php echo $row[folder]; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
-                                        <div class="screen desktop-only">
+                                        <div class="screen tablet-and-up">
                                             <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $row[name]; ?>" data-delay='{"show":"2000"}'>
                                                 <?php echo $row[name]; ?>
                                             </p>

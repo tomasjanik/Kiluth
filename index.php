@@ -23,7 +23,7 @@
 
 <body>
         <?php require_once('header.php');?>
-        <div id="carousel" class="carousel slide carousel-fade desktop-only" data-ride="carousel" data-interval="8000">
+        <div id="carousel" class="carousel slide carousel-fade tablet-and-up" data-ride="carousel" data-interval="8000">
             <!--                       -->
             <div class="carousel-inner" role="listbox">
                 <?php $carousel = $conn->query("SELECT * FROM carousel ORDER BY ID LIMIT 4");
@@ -72,11 +72,11 @@
             <!--                       -->
             <p class="text-bigger">
                 Kiluth is a digital-oriented branding agency working with clients from
-                <br class="desktop-only" /> different countries. Our studio is based in Bangkok, Thailand. We
-                <br class="desktop-only" />uniquely assign identities to brands with artistic approaches.
+                <br class="tablet-and-up" /> different countries. Our studio is based in Bangkok, Thailand. We
+                <br class="tablet-and-up" />uniquely assign identities to brands with artistic approaches.
                 <br />
                 <br /> We work independently with brands and businesses, creating modern
-                <br class="desktop-only" />solutions, forming sense of place for the clients and their end-users.
+                <br class="tablet-and-up" />solutions, forming sense of place for the clients and their end-users.
             </p>
             <!--                        -->
             <div class="row medium-space">

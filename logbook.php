@@ -9,7 +9,7 @@
 
     <body>
         <?php require_once('header.php');?>
-            <nav class="navbar desktop-only">
+            <nav class="navbar tablet-and-up">
                 <div class="container">
                     <ul class="nav navbar-nav second">
                         <li><a class="link active select select-all" href="#">All</a></li>
@@ -22,7 +22,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="small-space desktop-only"></div>
+            <div class="small-space tablet-and-up"></div>
             <div class="container">
                 <div class="row logs-holder">
 <?php $logs = $conn->query("SELECT * FROM logs ORDER BY date_published DESC");

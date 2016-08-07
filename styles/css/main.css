@@ -684,7 +684,7 @@ End of Thumbnail Aspect Ratio
   padding-bottom: 0.938em;
 }
 
-.desktop-only,
+.tablet-and-up,
 .widescreen-only {
   display: none;
 }
@@ -817,7 +817,7 @@ p {
   .mobile-only {
     display: none;
   }
-  .desktop-only {
+  .tablet-and-up {
     display: block;
   }
   .navbar-brand,
@@ -889,7 +889,7 @@ p {
   .screen:hover {
     opacity: 1;
   }
-  .tablet-only {
+  .hide-on-desktop {
     display: none;
   }
   .preview {
