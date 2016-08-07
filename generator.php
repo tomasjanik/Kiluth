@@ -1,34 +1,20 @@
 <?php require_once('connection.php'); 
 
-if (!empty($_GET['t1'])) {
-    $item1 = "&t1=" . $_GET['t1'] . "&q1=" . $_GET['q1'] . "&p1=" . $_GET['p1'];
-}
+ $limit = 7;
 
-if (!empty($_GET['t2'])) {
-    $item2 = "&t2=" . $_GET['t2'] . "&q2=" . $_GET['q2'] . "&p2=" . $_GET['p2'];
-}
-
-if (!empty($_GET['t3'])) {
-    $item3 = "&t3=" . $_GET['t3'] . "&q4=" . $_GET['q3'] . "&p3=" . $_GET['p3'];
-}
-
-if (!empty($_GET['t4'])) {
-    $item4 = "&t4=" . $_GET['t4'] . "&q4=" . $_GET['q4'] . "&p4=" . $_GET['p4'];
-}
-
-if (!empty($_GET['t5'])) {
-    $item5 = "&t5=" . $_GET['t5'] . "&q5=" . $_GET['q5'] . "&p5=" . $_GET['p5'];
-}
-
-if (!empty($_GET['t6'])) {
-    $item6 = "&t6=" . $_GET['t6'] . "&q6=" . $_GET['q6'] . "&p6=" . $_GET['p6'];
+for ($a = 1; $a <= $limit; $a++) {
+    if (!empty($_GET['t'. $a])) {
+        ${"item" . $a} = "&t".$a."=" . $_GET['t'.$a] . "&q".$a."=" . $_GET['q'.$a] . "&p".$a."=" . $_GET['p'.$a];
+        
+        $items = ${"item" . $a};
+    }
 }
 
 if (!empty($_GET['status'])) {
     $status = "&status=" . $_GET['status'];
 }
 
-$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $item1 . $item2 . $item3 . $item4 . $item5 . $item6 . $status . "&name=" . $_GET['name'] ;
+$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $items . $status . "&name=" . $_GET['name'] ;
 
 if ($_GET['status'] == "Paid") {
     $paid == "checked";
@@ -141,52 +127,49 @@ if ($_GET['generated'] == "generated") {
                         <p>
                             Item
                         </p>
-                        <input type="text" name="t1" value="<?php echo $_GET['t1']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
-                        <input type="text" name="t2" value="<?php echo $_GET['t2']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
-                        <input type="text" name="t3" value="<?php echo $_GET['t3']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
-                        <input type="text" name="t4" value="<?php echo $_GET['t4']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
-                        <input type="text" name="t5" value="<?php echo $_GET['t5']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
-                        <input type="text" name="t6" value="<?php echo $_GET['t6']; ?>" placeholder="Item">
-                        <div class="small-space"></div>
+                        <?php
+                        
+                            //Loop for identity blocks
+                            for ($t = 1; $t <= $limit; $t++) {
+                                
+                                ?>
+                                    <input type="text" name="<?php echo "t". $t; ?>" value="<?php echo $_GET['t' . $t]; ?>">
+                                    <div class="small-space"></div>
+                                <?php
+                            }
+                        ?>
                     </div>
                     <div class="col-md-2 col-sm-2 col-xs-2">
                         <p>
-                            Quatity
+                            Quantity
                         </p>
-                        <input type="text" name="q1" value="<?php echo $_GET['q1']; ?>" placeholder="0">
-                        <div class="small-space"></div>
-                        <input type="text" name="q2" value="<?php echo $_GET['q2']; ?>" placeholder="0">
-                        <div class="small-space"></div>
-                        <input type="text" name="q3" value="<?php echo $_GET['q3']; ?>" placeholder="0">
-                        <div class="small-space"></div>
-                        <input type="text" name="q4" value="<?php echo $_GET['q4']; ?>" placeholder="0">
-                        <div class="small-space"></div>
-                        <input type="text" name="q5" value="<?php echo $_GET['q5']; ?>" placeholder="0">
-                        <div class="small-space"></div>
-                        <input type="text" name="q6" value="<?php echo $_GET['q6']; ?>" placeholder="0">
-                        <div class="small-space"></div>
+                        
+                        <?php
+                            //Loop for identity blocks
+                            for ($q = 1; $q <= $limit; $q++) {
+                                
+                                ?>  
+                                    <input type="text" name="<?php echo "q". $q; ?>" value="<?php echo $_GET['q' . $q]; ?>" placeholder="0">
+                                    <div class="small-space"></div>
+                                <?php
+                            }
+                        ?>
                     </div>
                     <div class="col-md-2 col-sm-2 col-xs-2">
                         <p>
                             Price
                         </p>
-                        <input type="text" name="p1" value="<?php echo $_GET['p1']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
-                        <input type="text" name="p2" value="<?php echo $_GET['p2']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
-                        <input type="text" name="p3" value="<?php echo $_GET['p3']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
-                        <input type="text" name="p4" value="<?php echo $_GET['p4']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
-                        <input type="text" name="p5" value="<?php echo $_GET['p5']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
-                        <input type="text" name="p6" value="<?php echo $_GET['p6']; ?>" placeholder="1000">
-                        <div class="small-space"></div>
+                        
+                        <?php
+                            //Loop for identity blocks
+                            for ($p = 1; $p <= $limit; $p++) {
+                                
+                                ?>  
+                                    <input type="text" name="<?php echo "p". $p; ?>" value="<?php echo $_GET['p' . $p]; ?>" placeholder="1000">
+                                    <div class="small-space"></div>
+                                <?php
+                            }
+                        ?>
                     </div>
 
 
