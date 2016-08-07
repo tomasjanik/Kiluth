@@ -46,13 +46,35 @@
                     opacity: 1;
                 }
                 
+                .buttonstyled a i {
+                    transition: all 0.3s ease;
+                    color: #000;
+                }
+                
+                .buttonstyled:hover a i {
+                    color: #fff;
+                }
+                
                 .ask p a {
                     font-size: 24px; 
                     font-weight: 400;
                 }
                 
-                .email {
-                    display: none;
+                .img-1 {
+                    background-image: url('images/png/1.png'); 
+                    background-color: transparent; 
+                    position:fixed; 
+                    bottom: -10%; 
+                    top: 15%; 
+                    left: 0; 
+                    right: 0; 
+                    opacity: 0;
+                }
+                
+                @media only screen and (min-width: 768px) {
+                    .img-1 {
+                        bottom: 0;
+                    }
                 }
                 
                 @media only screen and (min-width: 992px) {
@@ -60,10 +82,11 @@
                         font-size: 18px; 
                         font-weight: 400;
                     }
-                    .email {
-                        display: block;
+                    .img-1 {
+                        top: 10%; 
                     }
                 }
+                
             </style>
             <script>
                 $(document).ready(function () {
@@ -76,12 +99,10 @@
                     });
                     setTimeout(function () {
                         $("#fadein3").animate({
-                            top: '100px'
-                            , bottom: '-70px'
-                            , opacity: '1'
+                            opacity: '1'
                         }, {
-                            "duration": 1800
-                            , "easing": "swing"
+                            "duration": 1300, 
+                            "easing": "swing"
                         });
                         setTimeout(function () {
                             $('#fadein1').fadeIn(1000);
@@ -104,11 +125,14 @@
         <div class="container">
             <div class="small-space"></div>
             <div class="text-center">
-                <p id="fadein1" class="logo" style="font-size: 60px; color: #333;" hidden="hidden"> Kiluth </p> <span id="fadein2" class="text-normal" hidden="hidden">
+                <p id="fadein1" class="logo" style="font-size: 50px; color: #333; margin: 0; padding: 0;" hidden="hidden"> Kiluth </p> <span id="fadein2" class="text-smaller" hidden="hidden">
                     Coming Back Soon
                 </span>
-                <div id="fadein3" class="thumbnail" style="background-image: url('images/png/1.png'); background-color: transparent; position:fixed; bottom: -50px; top: 80px; left: 0; right: 0; opacity: 0;"></div>
-                <p class="ans" style="font-size: 18px; position: absolute; left: 0; right: 0; top: 45%; margin: 0 20px;" hidden="hidden"> 
+                
+                <!-- BG IMG -->
+                <div id="fadein3" class="thumbnail img-1"></div>
+                
+                <p class="ans" style="font-size: 18px; position: absolute; left: 0; right: 0; top: 40%; margin: 0 20px;" hidden="hidden"> 
                   <br />
                    Thank you for visiting Kiluth.
                     <br /> Unfortunately, we are undergoing a renovation.<br class="tablet-and-up" /> Please come back later.
@@ -118,11 +142,15 @@
                     <br />
                     <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="tel:+66931242007">(+66) 93 124 2007</a> </p>
             </div>
-            <div id="static" class="text-left email" style="position: absolute; top: 10px; right: 10px;">
-                <p class="buttonstyled"> <a href="mailto:hello@kiluth.com">hello@kiluth.com</a> </p>
+            <div id="static" class="text-left tablet-and-up" style="position: absolute; top: 10px; right: 10px;">
+                <p class="buttonstyled"> <a href="mailto:hello@kiluth.com"><i class="fa sub fa-envelope-o"></i> hello@kiluth.com</a> </p>
             </div>
             <div id="fadein4" class="text-left ask" style="position: absolute; bottom: 0px; right: 10px;" hidden="hidden">
-                <p> <a class="link-hover" href="#">?</a> </p>
+                <p>
+                    <a class="link-hover" href="#">
+                        <i class="fa sub fa-question-circle-o"></i>
+                    </a>
+                </p>
             </div>
         </div>
         <script>
