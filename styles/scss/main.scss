@@ -438,10 +438,10 @@ input {
         border: none;
         background: none;
         padding-bottom: 5px;
-        border-bottom: 1px solid $grey;
+        border-bottom: 1px solid $darkgrey;
         width: 100%;
         &:focus {
-           border-bottom: 1px solid $green; 
+           border-bottom: 1px solid $grey; 
         }
     }
     &[type=submit] {
@@ -762,7 +762,7 @@ End of Thumbnail Aspect Ratio
     height: 100vh;
     li {
         padding: 10px 0;
-        border-bottom: 1px solid $grey;
+        border-bottom: 1px solid $darkgrey;
     }
 }
 

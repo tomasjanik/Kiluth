@@ -79,23 +79,6 @@ footer .enquiries-module .row div p {
   color: #fff;
 }
 
-input[type=text] {
-  border: none;
-  background: none;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #C9C9C9;
-  width: 100%;
-}
-
-input[type=submit] {
-  border: none;
-  background: none;
-}
-
-input:focus {
-  outline: none;
-}
-
 .footer-submit {
   position: relative;
   top: -27px;
