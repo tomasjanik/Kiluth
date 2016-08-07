@@ -88,6 +88,7 @@ nav {
 .nav.second {
     li a {
         padding: 15px 0;
+        opacity: 0.5;
     }
     .disable-slash a {
         padding: 15px 8px;
@@ -440,7 +441,8 @@ input {
         padding-bottom: 5px;
         border-bottom: 1px solid $darkgrey;
         width: 100%;
-        &:focus {
+        &:focus,
+        &:hover {
            border-bottom: 1px solid $grey; 
         }
     }
@@ -998,7 +1000,7 @@ p {
             display: block;
             width: 0;
             height: 1px;
-            background: $white;
+            background: $grey;
             transition: width .3s;
         }
         &:hover::after {
