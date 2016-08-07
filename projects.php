@@ -29,15 +29,15 @@
                     <nav class="navbar tablet-and-up">
                         <div class="container">
                             <ul class="nav navbar-nav second">
-                                <li><a class="link active select select-all" href="#">All</a></li>
+                                <li><a class="link active select select-all" href="javascript:void(0)">All</a></li>
                                 <li class="disable-slash"><a class="text-muted">/</a></li>
-                                <li><a class="link select select-branding" href="#">Branding</a></li>
+                                <li><a class="link select select-branding" href="javascript:void(0)">Branding</a></li>
                                 <li class="disable-slash"><a class="text-muted">/</a></li>
-                                <li><a class="link select select-prints" href="#">Prints</a></li>
+                                <li><a class="link select select-prints" href="javascript:void(0)">Prints</a></li>
                                 <li class="disable-slash"><a class="text-muted">/</a></li>
-                                <li><a class="link select select-digital" href="#">Digital</a></li>
+                                <li><a class="link select select-digital" href="javascript:void(0)">Digital</a></li>
                                 <li class="disable-slash"><a class="text-muted">/</a></li>
-                                <li class="clients"><a class="link" href="#">Clients<i class="arrow fa fa-angle-up"></i></a></li>
+                                <li class="clients"><a class="link" href="javascript:void(0)">Clients<i class="arrow fa fa-angle-up"></i></a></li>
                             </ul>
                         </div>
                     </nav>

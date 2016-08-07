@@ -12,13 +12,13 @@
             <nav class="navbar tablet-and-up">
                 <div class="container">
                     <ul class="nav navbar-nav second">
-                        <li><a class="link active select select-all" href="#">All</a></li>
+                        <li><a class="link active select select-all" href="javascript:void(0)">All</a></li>
                         <li class="disable-slash"><a class="text-muted">/</a></li>
-                        <li><a class="link select select-insight" href="#">Insight</a></li>
+                        <li><a class="link select select-insight" href="javascript:void(0)">Insight</a></li>
                         <li class="disable-slash"><a class="text-muted">/</a></li>
-                        <li><a class="link select select-launch" href="#">Launch</a></li>
+                        <li><a class="link select select-launch" href="javascript:void(0)">Launch</a></li>
                         <li class="disable-slash"><a class="text-muted">/</a></li>
-                        <li><a class="link select select-new-clients" href="#">New Client</a></li>
+                        <li><a class="link select select-new-clients" href="javascript:void(0)">New Client</a></li>
                     </ul>
                 </div>
             </nav>
