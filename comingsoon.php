@@ -109,7 +109,7 @@
                     <br />
                     If you have any enquiry, please contact
                     <br />
-                    <a class="link-hover" style="font-size: inherit; color: #0167CB;" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="link-hover" style="font-size: inherit; color: #0167CB;" href="tel:+66931242007">(+66) 93 124 2007</a> </p>
+                    <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="tel:+66931242007">(+66) 93 124 2007</a> </p>
             </div>
             <div id="static" class="text-left desktop-only" style="position: absolute; top: 10px; right: 10px;">
                 <p class="buttonstyled"> <a href="mailto:hello@kiluth.com">hello@kiluth.com</a> </p>
