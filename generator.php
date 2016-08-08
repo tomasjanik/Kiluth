@@ -16,7 +16,7 @@ if (!empty($_GET['status'])) {
     $status = "&status=" . $_GET['status'];
 }
 
-$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $items . "&name=" . $_GET['name'] . "&amount=" . $amount . $status;
+$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location']  . "&country=" . $_GET['country'] . $items . "&name=" . $_GET['name'] . "&amount=" . $amount . $status;
 
 
 function redirect_to_url($url)
@@ -40,6 +40,24 @@ function redirect_to_url($url)
 if ($_GET['generated'] == "generated") {
     redirect_to_url($link);
 }
+
+$date = strtoupper(date("dMY"));
+$due = date("d") . strtoupper(date("M", strtotime('+1 month'))) . date("Y");
+
+$nextmonth = date("M", strtotime('+1 month'));
+
+if (strpos($nextmonth, 'dec') !== false OR strpos($nextmonth, 'Dec') !== false OR strpos($nextmonth, 'DEC') !== false) {
+    $due = date("d") . strtoupper(date("M", strtotime('+1 month'))) . date("Y", strtotime('+1 year'));
+}
+
+if (!empty($_GET['date'])) {
+    $date = $_GET['date'];
+}
+
+if (!empty($_GET['due'])) {
+    $due = $_GET['due'];
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +91,7 @@ if ($_GET['generated'] == "generated") {
                         <p>
                             Date
                         </p>
-                        <input type="text" name="date" value="<?php echo $_GET['date']; ?>" placeholder="01JAN2000">
+                        <input type="text" name="date" value="<?php echo $date; ?>" placeholder="<?php echo $date ;?>">
                         <div class="small-space"></div>
                     </div>
                     <!--Clearfix-->
@@ -82,7 +100,7 @@ if ($_GET['generated'] == "generated") {
                         <p>
                             Due Date
                         </p>
-                        <input type="text" name="due" value="<?php echo $_GET['due']; ?>" placeholder="01JAN2000">
+                        <input type="text" name="due" value="<?php echo $due; ?>" placeholder="<?php echo $due ;?>">
                         <div class="small-space"></div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
@@ -113,14 +131,18 @@ if ($_GET['generated'] == "generated") {
                     <div class="clearfix visible-xs-block"></div>
                     <div class="col-md-3 col-sm-3">
                         <p>
-                            Location
+                            Address
                         </p>
-                        <input type="text" name="location" value="<?php echo $_GET['location']; ?>" placeholder="Bangkok, Thailand">
+                        <input type="text" name="location" value="<?php echo $_GET['location']; ?>" placeholder="111/0 Kalapapruk Jomthong Bangkok">
                         <div class="small-space"></div>
                     </div>
                     
                     <div class="col-xs-6 col-sm-3">
-                        
+                        <p>
+                            Country
+                        </p>
+                        <input type="text" name="country" value="<?php echo $_GET['country']; ?>" placeholder="Thailand">
+                        <div class="small-space"></div>
                     </div>
                     <!---->
                     
