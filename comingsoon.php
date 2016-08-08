@@ -135,14 +135,14 @@
                 <p class="ans" style="font-size: 18px; position: absolute; left: 0; right: 0; top: 40%; margin: 0 20px;" hidden="hidden"> 
                   <br />
                    Thank you for visiting Kiluth.
-                    <br /> Unfortunately, we are undergoing a renovation.<br class="tablet-and-up" /> Please come back later.
+                    <br /> Unfortunately, we are undergoing a renovation.<br class="tablet-up-only" /> Please come back later.
                     <br />
                     <br />
                     If you have any enquiry, please contact
                     <br />
                     <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="mailto:hello@kiluth.com">hello@kiluth.com</a> or <a class="link-hover" style="font-size: inherit; color: #1196f4;" href="tel:+66931242007">(+66) 93 124 2007</a> </p>
             </div>
-            <div id="static" class="text-left tablet-and-up" style="position: absolute; top: 10px; right: 10px;">
+            <div id="static" class="text-left tablet-up-only" style="position: absolute; top: 10px; right: 10px;">
                 <p class="buttonstyled"> <a href="mailto:hello@kiluth.com"><i class="fa sub fa-envelope-o"></i> hello@kiluth.com</a> </p>
             </div>
             <div id="fadein4" class="text-left ask" style="position: absolute; bottom: 0px; right: 10px;" hidden="hidden">

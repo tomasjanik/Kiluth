@@ -8,7 +8,7 @@
             <span></span>
             <span></span>
         </div>
-        <ul class="nav navbar-nav tablet-and-up">
+        <ul class="nav navbar-nav tablet-up-only">
             <?php 
             session_start();
             $pageurl = $_SERVER['REQUEST_URI'];

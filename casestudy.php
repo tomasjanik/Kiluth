@@ -147,7 +147,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
             <div class="container-fluid thumbnail main <?php echo $mainhide; ?>" style="background-image: url(project/<?php echo $folder; ?>/<?php echo $mainImg; ?>.png); background-image: -webkit-image-set(url(project/<?php echo $folder; ?>/<?php echo $mainImg; ?>.png) 1x, url(project/<?php echo $folder; ?>/<?php echo $mainImg; ?>@2x.png) 2x)" data-rjs="2"></div>
 
             <!--Showcase-->
-            <div class="medium-space tablet-and-up"></div>
+            <div class="medium-space tablet-up-only"></div>
             <div class="small-space mobile-only"></div>
             <div class="container">
 
@@ -173,7 +173,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                     </div>
                     <div class="col-md-6">
                         <br />
-                        <p class="tablet-and-up">
+                        <p class="tablet-up-only">
                             <?php echo $description; ?>
                         </p>
                         <div class="mobile-only">
@@ -184,7 +184,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                         </div>
                     </div>
                 </div>
-                <div class="medium-space tablet-and-up"></div>
+                <div class="medium-space tablet-up-only"></div>
                 <div class="small-space mobile-only"></div>
                 <!--Identity-->
                 <div class="<?php echo $identityEmpty; ?>">

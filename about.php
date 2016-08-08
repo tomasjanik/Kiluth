@@ -19,11 +19,11 @@
 
                             <body>
                                 <?php require_once('header.php');?>
-                                    <div class="space tablet-and-up"></div>
+                                    <div class="space tablet-up-only"></div>
                                     <div class="small-space mobile-only"></div>
                                     <div class="container">
                                         <div class="row">
-                                            <div class="col-md-4 tablet-and-up">
+                                            <div class="col-md-4 tablet-up-only">
                                                 <p class="text-bigger">About Kiluth.</p>
                                                 <div class="small-space"></div>
                                             </div>
