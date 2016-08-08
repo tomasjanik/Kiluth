@@ -23,7 +23,7 @@
                 <a class="link-hover text-smaller" href="mailto:ratchapon@kiluth.com"><b>ratchapon@kiluth.com</b></a>
             <div class="copyright medium-space">
                 <p class="text-smaller hold-admin">
-                    &copy; Copyright Kiluth 2016
+                    &copy; Copyright Kiluth <?php echo date("Y"); ?>
                 </p>
             </div>
         </div>
