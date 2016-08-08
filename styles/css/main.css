@@ -405,7 +405,7 @@ input,
 select,
 textarea {
   border-radius: 0;
-  cursor: pointer;
+  cursor: text;
   transition: all 0.3s ease;
 }
 
@@ -685,7 +685,7 @@ End of Thumbnail Aspect Ratio
   padding-bottom: 0.938em;
 }
 
-.tablet-and-up,
+.tablet-up-only,
 .widescreen-only {
   display: none;
 }
@@ -818,7 +818,7 @@ p {
   .mobile-only {
     display: none;
   }
-  .tablet-and-up {
+  .tablet-up-only {
     display: block;
   }
   .navbar-brand,
