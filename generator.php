@@ -1,26 +1,22 @@
 <?php require_once('connection.php'); 
 
- $limit = 7;
+ $limit = 6;
 
 for ($a = 1; $a <= $limit; $a++) {
     if (!empty($_GET['t'. $a])) {
         ${"item" . $a} = "&t".$a."=" . $_GET['t'.$a] . "&q".$a."=" . $_GET['q'.$a] . "&p".$a."=" . $_GET['p'.$a];
-        
-        $items = ${"item" . $a};
+        $amount = $a;
     }
 }
 
+$items = $item1 . $item2 . $item3 . $item4 . $item5 . $item6 ;
+
+//Check if paid or not
 if (!empty($_GET['status'])) {
     $status = "&status=" . $_GET['status'];
 }
 
-$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $items . $status . "&name=" . $_GET['name'] ;
-
-if ($_GET['status'] == "Paid") {
-    $paid == "checked";
-} else {
-    $paid == "";
-}
+$link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location'] . $items . "&name=" . $_GET['name'] . "&amount=" . $amount . $status;
 
 
 function redirect_to_url($url)
@@ -50,6 +46,11 @@ if ($_GET['generated'] == "generated") {
 <html lang="en">
 
 <head>
+   <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
     <?php require_once('head.php');?>
     <link rel="stylesheet" href="styles/css/second.css">
 </head>
@@ -178,7 +179,19 @@ if ($_GET['generated'] == "generated") {
                         <input type="text" name="generated" value="generated" hidden="hidden">
                         <input class="link-hover save" type="submit" name="submit" value="Generate Invoice">
                         <div class="small-space"></div>
-                        <input type="checkbox" name="status" value="Paid" <?php echo $paid; ?>> <span class="text-smaller"> Paid</span>
+                        
+                        <?php
+                        
+if ($_GET['status'] == "Paid") {
+    ?>
+        <input type="checkbox" name="status" value="Paid" checked> <span class="text-smaller"> Paid</span>
+    <?php
+} else {
+    ?>
+        <input type="checkbox" name="status" value="Paid"> <span class="text-smaller"> Paid</span>
+    <?php
+}
+                        ?>
                     </div>
                     <!---->
                 </form>

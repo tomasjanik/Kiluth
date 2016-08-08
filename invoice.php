@@ -33,12 +33,19 @@ $mm = $duedate[2] . $duedate[3] . $duedate[4];
 $yy = $duedate[5] . $duedate[6] . $duedate[7] . $duedate[8];
 $duedate = $dd . " " . $mm . " " . $yy;
 
-$total = $_GET[p1] + $_GET[p2] + $_GET[p3];
+ $limit = $_GET['amount'];
+
+$total = $_GET[p1] + $_GET[p2] + $_GET[p3] + $_GET[p4] + $_GET[p5] + $_GET[p6];
 ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
+       <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no">
         <!-- Favicon -->
@@ -117,10 +124,33 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                         </table>
                         
                         <br />
-                        <p style="font-weight: 600; font-size: 28px; margin: 0; text-align: left; padding-top: 20px;"> INVOICE </p>
-                        <p style="margin: 0; text-align: left;"> <span style="color: red;">
-                            <?php echo $_GET['status']; ?>
-                        </span> </p>
+                        
+                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin: 0px auto;">
+                            <tr>
+                                <td width="50%" valign="top">
+                                    <p style="margin: 0; text-align: left; padding-top: 20px; font-size: 28px; font-weight: 600;"> INVOICE </p>
+                                </td>
+                                <td style="font-size: 0;" width="10"> &nbsp; </td>
+                                <td width="50%" valign="top" style="font-size: 20px;">
+                                   <?php
+                                    if (strpos($_GET['status'], 'paid') !== false) {
+                                        ?>
+                                            <p style="text-align: right; text-transform: uppercase;"> <span style="color: #0ae276;">
+                                                Paid
+                                            </span> </p>
+                                        <?php
+                                    } else {
+                                        ?>
+                                            <p style="text-align: right; text-transform: uppercase;"> <span style="color: #fe4858;">
+                                                Unpaid
+                                            </span> </p>
+                                        <?php
+                                    }
+                                    ?>
+                                    
+                                </td>
+                            </tr>
+                        </table>
                     </td>
                 </tr>
                 <tr>
@@ -170,7 +200,7 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                 </td>
                                 <td style="font-size: 0;" width="10"> &nbsp; </td>
                                 <td width="30%" valign="top">
-                                    <p style="margin: 0; text-align: right;">
+                                    <p style="margin: 0; text-align: right; text-transform: uppercase;">
                                         <?php echo $date; ?>
                                             <br />
                                             <?php echo $duedate; ?>
@@ -209,24 +239,12 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <td width="40%" valign="top">
                                         <p style="margin: 0;">
                                             <?php 
-    if (!empty($_GET['t1'])) {
-        echo $_GET['t1'] . "<br />"; 
-    }                               
-    if (!empty($_GET['t2'])) {
-        echo $_GET['t2'] . "<br />";
-    }                               
-    if (!empty($_GET['t3'])) {
-        echo $_GET['t3'] . "<br />"; 
-    }
-    if (!empty($_GET['t4'])) {
-        echo $_GET['t4'] . "<br />";
-    } 
-    if (!empty($_GET['t5'])) {
-        echo $_GET['t5'] . "<br />"; 
-    } 
-    if (!empty($_GET['t6'])) {
-        echo $_GET['t6'] . "<br />";
-    } 
+
+for ($t = 1; $t <= $limit; $t++) {
+    if (!empty($_GET['t'].$t)) {
+        echo $_GET['t'.$t] . "<br />"; 
+    }  
+}
 ?>
                                         </p>
                                     </td>
@@ -234,24 +252,11 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <td width="30%" valign="top">
                                         <p style="margin: 0; text-align: right;">
                                             <?php 
-    if (!empty($_GET['q1'])) {
-        echo number_format($_GET['q1']) . "<br />"; 
-    }                               
-    if (!empty($_GET['q2'])) {
-        echo number_format($_GET['q2']) . "<br />"; 
-    }                               
-    if (!empty($_GET['q3'])) {
-        echo number_format($_GET['q3']) . "<br />"; 
-    }
-    if (!empty($_GET['q4'])) {
-        echo number_format($_GET['q4']) . "<br />"; 
-    } 
-    if (!empty($_GET['q5'])) {
-        echo number_format($_GET['q5']) . "<br />"; 
-    } 
-    if (!empty($_GET['q6'])) {
-        echo number_format($_GET['q6']) . "<br />"; 
-    } 
+for ($q = 1; $q <= $limit; $q++) {
+    if (!empty($_GET['q'.$q])) {
+        echo number_format($_GET['q'.$q]) . "<br />"; 
+    }   
+}                    
 ?>
                                         </p>
                                     </td>
@@ -259,24 +264,11 @@ $total = $_GET[p1] + $_GET[p2] + $_GET[p3];
                                     <td width="30%" valign="top">
                                         <p style="margin: 0; text-align: right;">
                                             <?php 
-    if (!empty($_GET['p1'])) {
-        echo number_format($_GET['p1']) . " THB<br />"; 
-    }                               
-    if (!empty($_GET['p2'])) {
-        echo number_format($_GET['p2']) . " THB<br />"; 
-    }                               
-    if (!empty($_GET['p3'])) {
-        echo number_format($_GET['p3']) . " THB<br />"; 
-    }
-    if (!empty($_GET['p4'])) {
-        echo number_format($_GET['p4']) . " THB<br />"; 
-    } 
-    if (!empty($_GET['p5'])) {
-        echo number_format($_GET['p5']) . " THB<br />"; 
-    } 
-    if (!empty($_GET['p6'])) {
-        echo number_format($_GET['p6']) . " THB<br />"; 
-    } 
+for ($p = 1; $p <= $limit; $p++) {
+    if (!empty($_GET['p'.$p])) {
+        echo number_format($_GET['p'.$p]) . " THB<br />"; 
+    }   
+} 
 ?>
                                         </p>
                                     </td>
