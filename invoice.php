@@ -15,7 +15,6 @@ while($project = $projects->fetch_assoc()) {
 };
 
 $email = $_GET['email'];
-$code = "#" . $ID . $name[0] . $region[0] . $location[0] . $email[0];
 $date = $_GET['date'];
 $duedate = $_GET['due'];
 $country = $_GET['country'];
@@ -30,7 +29,9 @@ $mm = $duedate[2] . $duedate[3] . $duedate[4];
 $yy = $duedate[5] . $duedate[6] . $duedate[7] . $duedate[8];
 $duedate = $dd . " " . $mm . " " . $yy;
 
- $limit = $_GET['amount'];
+$code = "#" . $ID . $name[0] . $region[0] . $location[0] . $country[0];
+
+$limit = $_GET['amount'];
 
 $total = $_GET[p1] + $_GET[p2] + $_GET[p3] + $_GET[p4] + $_GET[p5] + $_GET[p6];
 
@@ -144,10 +145,10 @@ $boxshadow = "-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 
                             </tr>
                         </table>
                         <br />
-                        <table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0px auto;">
+                        <table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0px auto; font-weight: 600;">
                             <tr>
                                 <td width="300px" valign="top">
-                                    <p style="margin: 0; text-align: left; padding-top: 20px; font-size: 28px; font-weight: 600;"> INVOICE </p>
+                                    <p style="margin: 0; text-align: left; padding-top: 20px; font-size: 28px;"> INVOICE </p>
                                 </td>
                                 <td style="font-size: 0;" width="10"> &nbsp; </td>
                                 <td width="300px" valign="top" style="font-size: 20px;">
@@ -213,9 +214,8 @@ $boxshadow = "-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 
                                         <br />
                                         <?php
                                             echo $_GET['location'];
-                                            echo "<br />";
-                                            echo $location . ", ";
-                                            echo $country;
+                                            echo " ";
+                                            echo $location . ", " . $country;
                                         ?>
                                     </p>
                                 </td>

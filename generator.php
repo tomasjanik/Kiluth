@@ -1,14 +1,13 @@
 <?php require_once('connection.php'); 
 
- $limit = 6;
-
+//Limit list of item 
+$limit = 6;
 for ($a = 1; $a <= $limit; $a++) {
     if (!empty($_GET['t'. $a])) {
         ${"item" . $a} = "&t".$a."=" . $_GET['t'.$a] . "&q".$a."=" . $_GET['q'.$a] . "&p".$a."=" . $_GET['p'.$a];
         $amount = $a;
     }
 }
-
 $items = $item1 . $item2 . $item3 . $item4 . $item5 . $item6 ;
 
 //Check if paid or not
@@ -16,6 +15,7 @@ if (!empty($_GET['status'])) {
     $status = "&status=" . $_GET['status'];
 }
 
+//Render link accordingly
 $link = "invoice.php?project=". $_GET['folder'] ."&date=". $_GET['date'] ."&due=". $_GET['due'] ."&email=". $_GET['email'] ."&tel=". $_GET['tel'] . "&location=" . $_GET['location']  . "&country=" . $_GET['country'] . $items . "&name=" . $_GET['name'] . "&amount=" . $amount . $status;
 
 
@@ -41,23 +41,26 @@ if ($_GET['generated'] == "generated") {
     redirect_to_url($link);
 }
 
+
+//Timezone setting
+date_default_timezone_set("Asia/Bangkok");
+//Date and due date
 $date = strtoupper(date("dMY"));
 $due = date("d") . strtoupper(date("M", strtotime('+1 month'))) . date("Y");
-
+//Next month
 $nextmonth = date("M", strtotime('+1 month'));
-
+//If month is DEC, year plus one
 if (strpos($nextmonth, 'dec') !== false OR strpos($nextmonth, 'Dec') !== false OR strpos($nextmonth, 'DEC') !== false) {
     $due = date("d") . strtoupper(date("M", strtotime('+1 month'))) . date("Y", strtotime('+1 year'));
 }
 
+//If date is entered, use that one instead
 if (!empty($_GET['date'])) {
     $date = $_GET['date'];
 }
-
 if (!empty($_GET['due'])) {
     $due = $_GET['due'];
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -133,15 +136,15 @@ if (!empty($_GET['due'])) {
                         <p>
                             Address
                         </p>
-                        <input type="text" name="location" value="<?php echo $_GET['location']; ?>" placeholder="111/0 Kalapapruk Jomthong Bangkok">
+                        <input type="text" name="location" value="<?php echo $_GET['location']; ?>" placeholder="Kiluth 45 Nirvana Kalapapruk Jomthong">
                         <div class="small-space"></div>
                     </div>
                     
                     <div class="col-xs-6 col-sm-3">
                         <p>
-                            Country
+                            Country & Postal Code
                         </p>
-                        <input type="text" name="country" value="<?php echo $_GET['country']; ?>" placeholder="Thailand">
+                        <input type="text" name="country" value="<?php echo $_GET['country']; ?>" placeholder="Thailand 10150">
                         <div class="small-space"></div>
                     </div>
                     <!---->
