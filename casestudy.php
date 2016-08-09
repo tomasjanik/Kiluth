@@ -48,13 +48,17 @@ if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremip
     if (!empty($_GET['location'])) {
         $location = $_GET['location'];
     } else {
-        $location = "Bangkok";
+        if (empty($location)) {
+            $location = "Bangkok";
+        }
     }
 
     if (!empty($_GET['sector'])) {
         $business = $_GET['sector'];
     } else {
-        $business = "Sample Business";
+        if (empty($business)) {
+            $business = "Sample Business";
+        }
     }
 }
 
