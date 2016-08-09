@@ -14,29 +14,18 @@
             $pageurl = $_SERVER['REQUEST_URI'];
 //            echo $pageurl;
             
-            $underline1 = 'muted'; //projects
-            $underline2 = 'muted'; //about
-            $underline3 = 'muted'; //logbook
-            $underline4 = 'muted'; //contact
-            $underline5 = 'muted'; //admin
-            $underline6 = 'muted'; //library
-            $underline7 = 'muted'; //library
-            $underline8 = 'muted'; //database
-            
-            if (strpos($pageurl, 'projects') !== false) {
-                $underline1 = 'unmuted';
+            $xLimit = 8;
+            for ($x = 1; $x <= $xLimit; $x++) {
+                ${"underline" . $x} = 'muted';
             }
-            elseif (strpos($pageurl, 'case-study') !== false) {
+            
+            if (strpos($pageurl, 'projects') !== false OR strpos($pageurl, 'casestudy') !== false) {
                 $underline1 = 'unmuted';
-                
             }
             elseif (strpos($pageurl, 'about') !== false) {
                 $underline2 = 'unmuted';
             }
-            elseif (strpos($pageurl, 'logbook') !== false) {
-                $underline3 = 'unmuted';
-            }
-            elseif (strpos($pageurl, 'log.php') !== false) {
+            elseif (strpos($pageurl, 'logbook') !== false OR strpos($pageurl, 'log.php') !== false) {
                 $underline3 = 'unmuted';
             }
             elseif (strpos($pageurl, 'contact') !== false) {
@@ -51,18 +40,13 @@
             elseif (strpos($pageurl, 'generator') !== false) {
                 $underline7 = 'unmuted';
             }
-            elseif (strpos($pageurl, 'generator') !== false) {
+            elseif (strpos($pageurl, 'database') !== false) {
                 $underline8 = 'unmuted';
             }
             else {
-                $underline1 = 'unmuted'; //projects
-                $underline2 = 'unmuted'; //about
-                $underline3 = 'unmuted'; //logbook
-                $underline4 = 'unmuted'; //contact
-                $underline5 = 'unmuted'; //admin
-                $underline6 = 'unmuted'; //library
-                $underline7 = 'unmuted'; //generator
-                $underline8 = 'unmuted'; //database
+                for ($x = 1; $x <= $xLimit; $x++) {
+                    ${"underline" . $x} = 'unmuted';
+                }
             }
             
             ?>
