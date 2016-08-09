@@ -85,7 +85,7 @@
                     
                     <?php 
 if (!empty($_GET['project'])) {
-$link = "project=". $_GET['project'] ."&placeholder=true";
+$link = "project=". $_GET['project'];
 ?>
                     <a href="casestudy.php?<?php echo $link; ?>">
                         <div class="project small-space">

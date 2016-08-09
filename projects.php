@@ -92,7 +92,7 @@ renderClients($pupil[ID], $pupil[name], $pupil[subtitle], $pupil[business], $pup
                            
                            <?php 
 if (!empty($_GET['project'])) {
-$link = "project=". $_GET['project'] ."&placeholder=true";
+$link = "project=". $_GET['project'];
     ?>
 
                                 <a href="casestudy.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
