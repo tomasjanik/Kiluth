@@ -21,11 +21,17 @@ while($project = $projects->fetch_assoc()) {
 };
 $folder = $getfolder;
 
+if (empty($description) && empty($identity) && empty($prints) && empty($photography) && empty($digital)) {
+    $placeholder = true;
+} else {
+    $placeholder = false;
+}
+
 //Placeholder text substitution
-if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremipsum'] == "true") {
+if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremipsum'] == "true" OR $placeholder == true) {
     $longp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque cu.<br /><br />Erant populo periculis eu nec, eirmod delicatissimi et nec. Ne sea nobis nominavi mediocrem, dicat mucius conclusionemque ea has. Virtute accusata antiopam mea ei, vivendum dissentiunt et nec, eum ei accumsan offendit pericula.";
     
-    $shortp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Fugit necessitatibus ea eum. Maiestatis instructior et per. Pro vide tation quaeque.";
+    $shortp = "Choro patrioque evertitur an pri, mea te assum denique ullamcorper. Sed ei ludus quando ignota, vix cu delica Tissimi. Civibus antiopam eam ei.<br /><br />Sed elaboraret omittantur persequeris an. Veritus voluptatibus ut pri. Sed ei ludus quando ignota.";
     
     $description = $longp;
     $digital = $shortp;
