@@ -132,7 +132,7 @@ if (!empty($_GET['due'])) {
                     </div>
                     <!--Clearfix-->
                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
                         <p>
                             Address
                         </p>
@@ -141,7 +141,7 @@ if (!empty($_GET['due'])) {
                     </div>
                     
                     <div class="col-xs-6 col-sm-3">
-                        <p>
+                        <p class="preview">
                             Country & Postal Code
                         </p>
                         <input type="text" name="country" value="<?php echo $_GET['country']; ?>" placeholder="Thailand 10150">
