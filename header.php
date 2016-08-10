@@ -12,7 +12,12 @@
             <?php 
             session_start();
             $pageurl = $_SERVER['REQUEST_URI'];
-//            echo $pageurl;
+            
+            $actuallink = $_SERVER['HTTP_HOST'];
+            $database = "database";
+            if (strpos($actuallink, 'localhost') !== false) {
+                $database = "phpmyadmin";
+            }
             
             $xLimit = 8;
             for ($x = 1; $x <= $xLimit; $x++) {
@@ -60,7 +65,7 @@
                     <li><a class="link-ani <?php echo $underline5; ?>" href="admin.php">Admin</a></li>
                     <li><a class="link-ani <?php echo $underline6; ?>" href="library.php">Library</a></li>
                     <li><a class="link-ani <?php echo $underline7; ?>" href="generator.php">Invoice</a></li>
-                    <li><a class="link-ani <?php echo $underline8; ?>" href="database" target="_blank">Database</a></li>
+                    <li><a class="link-ani <?php echo $underline8; ?>" href="<?php echo $database ;?>" target="_blank">Database</a></li>
                 <?php } ?>
         </ul>
 
@@ -90,7 +95,7 @@
                     <a class="link-hover" href="generator.php">Invoice</a>
                 </li>
                 <li>
-                    <a class="link-hover" href="database" target="_blank">Database</a>
+                    <a class="link-hover" href="<?php echo $database ;?>" target="_blank">Database</a>
                 </li>
             <?php } ?>
         </ul>
