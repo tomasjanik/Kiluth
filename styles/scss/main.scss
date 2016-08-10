@@ -89,6 +89,9 @@ nav {
     li a {
         padding: 15px 0;
         opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
     }
     .disable-slash a {
         padding: 15px 8px;
