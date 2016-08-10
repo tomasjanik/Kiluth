@@ -990,12 +990,12 @@ p {
   }
   .text-bigger p,
   .text-bigger a {
-    font-size: 30px;
+    font-size: 25px;
   }
   a .text-bigger,
   p .text-bigger,
   .text-bigger {
-    font-size: 30px;
+    font-size: 25px;
   }
   .text-normal p,
   .text-normal a {
@@ -1029,5 +1029,9 @@ p {
   a,
   .text-smaller {
     font-size: 16px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 80px;
   }
 }
