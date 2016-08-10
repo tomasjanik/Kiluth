@@ -980,13 +980,13 @@ p {
   /*Font Sizes*/
   .text-smaller p,
   .text-smaller a {
-    font-size: 15px;
+    font-size: 16px;
   }
   a .text-smaller,
   p .text-smaller,
   a,
   .text-smaller {
-    font-size: 18px;
+    font-size: 16px;
   }
   .text-bigger p,
   .text-bigger a {
@@ -1013,5 +1013,21 @@ p {
   }
   .logbook {
     padding-left: 60px;
+  }
+  .thumbnail.main {
+    padding-bottom: 30%;
+  }
+}
+
+@media only screen and (min-height: 1200px) {
+  .text-smaller p,
+  .text-smaller a {
+    font-size: 16px;
+  }
+  a .text-smaller,
+  p .text-smaller,
+  a,
+  .text-smaller {
+    font-size: 16px;
   }
 }
