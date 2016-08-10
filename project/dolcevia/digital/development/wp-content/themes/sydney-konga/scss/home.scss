@@ -15,6 +15,11 @@ p
 {
     font-family: 'Prompt', sans-serif;
 }
+
+.thai {
+    font-family: 'Prompt', sans-serif !important;
+}
+
 .col-md-12,.col-md-6,.col-md-4,.col-md-2,.col-md-3,.col-md-8
 {
     padding-right: 0px;
@@ -98,8 +103,8 @@ p
     }
     &.section-3
     {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         p
         {
             &.circle
@@ -295,6 +300,7 @@ p
     {
         padding-top: 100px;
         padding-bottom: 100px;
+        text-align: left;
         .row
         {
             h6
@@ -622,8 +628,8 @@ p
             border-bottom: 1px solid #272727;
             &:hover
             {
-                color: #C9C9C9;
-                border-bottom: 1px solid #C9C9C9;
+                color: #737373;
+                border-bottom: 1px solid #737373;
             }
         }
         p
@@ -765,14 +771,13 @@ $viewpoint-mobile-menu-2: 991px;
                 
                 a
                 {
-                    color: black;
+                    color: #272727;
                     display: inline-block;
                     padding: 0px;
                     text-align: right;
                     font-weight: 300;
                     margin: 20px;
                     margin-top: 10px;
-                    
                     font-weight: 300;
                     font-family: 'Source Sans Pro', sans-serif;
                 
@@ -784,7 +789,7 @@ $viewpoint-mobile-menu-2: 991px;
                     
                     &:hover
                     {
-                        color: gray;
+                        color: #737373;
                     }
                 }
                 
