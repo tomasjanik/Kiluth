@@ -164,6 +164,10 @@ p {
     overflow: hidden;
 }
 
+.text-capitalized {
+    text-transform: capitalize;
+}
+
 .text-smaller,
 a .text-smaller,
 .text-smaller a {
@@ -1013,7 +1017,7 @@ p {
         position: fixed;
         z-index: 1000;
         top: 50%;
-        right: 30px;
+        left: 96%;
         opacity: 0.5;
         cursor: pointer;
         -ms-transform: rotate(-90deg);
@@ -1028,7 +1032,7 @@ p {
     .view-size {
         position: fixed;
         top: 50%;
-        left: 30px;
+        right: 96%;
         opacity: 0.5;
         transition: all 0.3s ease;
         cursor: pointer;
@@ -1065,7 +1069,7 @@ p {
     p .text-smaller,
     a,
     .text-smaller {
-        font-size: 15px;
+        font-size: 18px;
     }
     .text-bigger {
         p,
@@ -1092,6 +1096,7 @@ p {
     }
     h1 {
         font-size: 50px;
+        line-height: 80px;
     }
     .logbook {
         padding-left: 60px;
