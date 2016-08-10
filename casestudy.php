@@ -42,7 +42,10 @@ if ($_GET['placeholder'] == "true" OR $_GET['lorem'] == "true" OR $_GET['loremip
     if (!empty($_GET['name'])) {
         $name = $_GET['name'];
     } else {
-        $name = ucwords($_GET['project']);
+        if (empty($name)) {
+            $name = ucwords($_GET['project']);
+            $name = str_replace("-"," ",$name);
+        }
     }
 
     if (!empty($_GET['location'])) {
@@ -164,7 +167,7 @@ if (file_exists('project/'.$folder.'/photography/2.png')) {
                 <!--About Project-->
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="no-overflow"><?php echo $name; ?></h3>
+                        <h3 class="no-overflow text-capitalized"><?php echo $name; ?></h3>
                         <br />
                         <p>
                             Sector

@@ -93,26 +93,29 @@ renderClients($pupil[ID], $pupil[name], $pupil[subtitle], $pupil[business], $pup
                            <?php 
 if (!empty($_GET['project'])) {
 $link = "project=". $_GET['project'];
+$preview_name = str_replace("-"," ",$_GET['project']);
+$preview_name = ucwords($preview_name);
+
     ?>
 
                                 <a href="casestudy.php?<?php echo $link; ?>" class="col-sm-3 project-view item">
                                     <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2">
                                         <div class="screen tablet-up-only">
-                                            <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
-                                                <?php echo ucwords($_GET['project']); ?>
+                                            <p class="name text-normal" data-toggle="tooltip" data-placement="bottom" title="<?php echo $preview_name; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo $preview_name; ?>
                                             </p>
-                                            <p class="text-muted subtitle preview text-smaller hide" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
-                                                <?php echo ucwords($_GET['project']); ?>
+                                            <p class="text-muted subtitle preview text-smaller hide" data-toggle="tooltip" data-placement="bottom" title="<?php echo $preview_name; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo "Sample Business"; ?>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="mobile-only">
                                         <p>
-                                            <span class="name preview" data-toggle="tooltip" data-placement="bottom" title="<?php echo $_GET['project']; ?>" data-delay='{"show":"2000"}'>
-                                                <?php echo ucwords($_GET['project']); ?>
+                                            <span class="name preview" data-toggle="tooltip" data-placement="bottom" title="<?php echo $preview_name; ?>" data-delay='{"show":"2000"}'>
+                                                <?php echo $preview_name; ?>
                                             </span>
-                                           <span class="text-muted preview text-smaller" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum" data-delay='{"show":"2000"}'>
-                                               <?php echo ucwords($_GET['project']); ?>
+                                           <span class="text-muted preview text-smaller" data-toggle="tooltip" data-placement="bottom" title="<?php echo $preview_name; ?>" data-delay='{"show":"2000"}'>
+                                               <?php echo "Sample Business"; ?>
                                            </span>
                                         </p>
                                         <div class="small-space"></div>

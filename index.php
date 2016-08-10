@@ -86,15 +86,17 @@
                     <?php 
 if (!empty($_GET['project'])) {
 $link = "project=". $_GET['project'];
+$preview_name = str_replace("-"," ",$_GET['project']);
+$preview_name = ucwords($preview_name);
 ?>
                     <a href="casestudy.php?<?php echo $link; ?>">
                         <div class="project small-space">
                             <div class="thumbnail" style="background-image: url(project/<?php echo $_GET['project']; ?>/thumbnail.png); background-image: -webkit-image-set(url(project/<?php echo $_GET['project']; ?>/thumbnail.png) 1x, url(project/<?php echo $_GET['project']; ?>/thumbnail@2x.png) 2x)" data-rjs="2"></div>
                             <p class="title">
-                                <?php echo ucwords($_GET['project']); ?>
+                                <?php echo $preview_name; ?>
                             </p>
                             <p class="subtitle text-muted">
-                                <?php echo ucwords($_GET['project']); ?>
+                                <?php echo "Sample Business"; ?>
                             </p>
                         </div>
                     </a>
