@@ -61,10 +61,14 @@ $(document).ready(function () {
     //Filter Control
     $('.select').click(function () {
         $('.item').fadeOut();
-        $('footer').fadeOut();
+        $("footer").animate({
+            opacity: '0'
+        });
         setTimeout(function () {
-            $('footer').fadeIn();
-        }, 800);
+            $("footer").animate({
+                opacity: '1'
+            });
+        }, 600);
         $('.link').removeClass("active");
         $(this).toggleClass("active");
     });
