@@ -15,10 +15,6 @@ p {
   font-family: 'Prompt', sans-serif;
 }
 
-.thai {
-  font-family: 'Prompt', sans-serif !important;
-}
-
 .col-md-12, .col-md-6, .col-md-4, .col-md-2, .col-md-3, .col-md-8 {
   padding-right: 0px;
   padding-left: 0px;
@@ -35,6 +31,20 @@ p {
 .container.content-wrapper .section .row {
   max-width: 1200px;
   margin: auto;
+}
+
+.section-bg-contact {
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/08/flat-package.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-bg-about {
+  background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/08/Leaves@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 450px;
 }
 
 .section.section-home-banner {
@@ -75,8 +85,8 @@ p {
 }
 
 .section.section-3 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .section.section-3 p.circle {
@@ -90,6 +100,15 @@ p {
   width: 45%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section.section-3.section-products-map {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section.section-3.section-products-map img {
+  width: 700px;
 }
 
 .section.section-4 {
@@ -241,7 +260,6 @@ p {
 .section.section-footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  text-align: left;
 }
 
 .section.section-footer .row h6 {
@@ -396,13 +414,10 @@ p {
   padding-bottom: 100px;
 }
 
-.section.section-contact-2 .col-md-4 p {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 .section.section-contact-2 .col-md-4 p a {
   border: 0px;
   font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .section.section-contact-2 .col-md-4 p a:hover {
@@ -517,8 +532,8 @@ p {
 }
 
 .section .row a:hover {
-  color: #737373;
-  border-bottom: 1px solid #737373;
+  color: #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
 }
 
 .section .row p.p-home {
@@ -602,7 +617,7 @@ article.page.type-page.status-publish.hentry {
     text-align: right;
   }
   .site-header #mainnav-mobi li a {
-    color: #272727;
+    color: black;
     display: inline-block;
     padding: 0px;
     text-align: right;
@@ -617,7 +632,7 @@ article.page.type-page.status-publish.hentry {
     font-weight: 500;
   }
   .site-header #mainnav-mobi li a:hover {
-    color: #737373;
+    color: gray;
   }
   .site-header #mainnav-mobi li:last-child a {
     margin-right: 0px;
@@ -666,6 +681,9 @@ article.page.type-page.status-publish.hentry {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+  }
+  .section.section-3.section-products-map img {
+    width: 500px;
   }
   .section.section-4 {
     padding-top: 100px;
@@ -719,7 +737,7 @@ article.page.type-page.status-publish.hentry {
   }
   .section.section-footer {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .section.section-footer .row img {
     width: 130px;
@@ -863,6 +881,9 @@ article.page.type-page.status-publish.hentry {
   .container.content-wrapper .section .row {
     max-width: 640px;
   }
+  .section-bg-about {
+    background-size: 350px;
+  }
   .section.section-home-banner {
     margin-top: 50px;
   }
@@ -898,6 +919,9 @@ article.page.type-page.status-publish.hentry {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+  }
+  .section.section-3.section-products-map img {
+    width: 500px;
   }
   .section.section-4 {
     padding-top: 100px;
@@ -1009,6 +1033,9 @@ article.page.type-page.status-publish.hentry {
   .container.content-wrapper .section .row {
     max-width: 320px;
   }
+  .section-bg-about {
+    background-size: 250px;
+  }
   .section.section-home-banner {
     margin-top: 0px;
   }
@@ -1044,6 +1071,9 @@ article.page.type-page.status-publish.hentry {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
+  }
+  .section.section-3.section-products-map img {
+    width: 300px;
   }
   .section.section-4 {
     padding-top: 50px;

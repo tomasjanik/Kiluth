@@ -15,11 +15,6 @@ p
 {
     font-family: 'Prompt', sans-serif;
 }
-
-.thai {
-    font-family: 'Prompt', sans-serif !important;
-}
-
 .col-md-12,.col-md-6,.col-md-4,.col-md-2,.col-md-3,.col-md-8
 {
     padding-right: 0px;
@@ -45,6 +40,20 @@ p
 
         }
     }
+}
+.section-bg-contact
+{
+    background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/08/flat-package.png");
+    background-position: center right; 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-bg-about
+{
+    background-image: url("http://www.dolceviathailand.com/wp-content/uploads/2016/08/Leaves@2x.png");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 450px;
 }
 .section
 {
@@ -103,8 +112,8 @@ p
     }
     &.section-3
     {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         p
         {
             &.circle
@@ -120,6 +129,15 @@ p
             width: 45%;
             margin-right: auto;
             margin-left: auto;
+        }
+        &.section-products-map
+        {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            img
+            {
+                width: 700px;
+            }
         }
     }
     &.section-4
@@ -300,7 +318,6 @@ p
     {
         padding-top: 100px;
         padding-bottom: 100px;
-        text-align: left;
         .row
         {
             h6
@@ -484,11 +501,12 @@ p
         {
             p
             {
-                font-family: 'Source Sans Pro', sans-serif;
+                
                 a
                 {
                     border: 0px;
                     font-weight: bold;
+                    font-family: 'Source Sans Pro', sans-serif;
                     &:hover
                     {
                         border: 0px;
@@ -628,8 +646,8 @@ p
             border-bottom: 1px solid #272727;
             &:hover
             {
-                color: #737373;
-                border-bottom: 1px solid #737373;
+                color: #C9C9C9;
+                border-bottom: 1px solid #C9C9C9;
             }
         }
         p
@@ -771,13 +789,14 @@ $viewpoint-mobile-menu-2: 991px;
                 
                 a
                 {
-                    color: #272727;
+                    color: black;
                     display: inline-block;
                     padding: 0px;
                     text-align: right;
                     font-weight: 300;
                     margin: 20px;
                     margin-top: 10px;
+                    
                     font-weight: 300;
                     font-family: 'Source Sans Pro', sans-serif;
                 
@@ -789,7 +808,7 @@ $viewpoint-mobile-menu-2: 991px;
                     
                     &:hover
                     {
-                        color: #737373;
+                        color: gray;
                     }
                 }
                 
@@ -883,6 +902,14 @@ $viewpoint-mobile-menu-2: 991px;
                 margin-right: auto;
                 margin-left: auto;
             }
+            &.section-products-map
+            {
+                img
+                {
+                    width: 500px;
+                }
+            }
+
         }
         &.section-4
         {
@@ -967,7 +994,7 @@ $viewpoint-mobile-menu-2: 991px;
         &.section-footer
         {
             padding-top: 100px;
-            padding-bottom: 100px;
+            padding-bottom: 50px;
             .row
             {
                 img
@@ -995,8 +1022,6 @@ $viewpoint-mobile-menu-2: 991px;
         {
             padding-top: 100px;
             padding-bottom: 100px;
-            
-            
         }
         &.section-about-banner
         {
@@ -1234,6 +1259,10 @@ $viewpoint-mobile-menu-2: 991px;
     {
         max-width: $viewpoint-tablet;
     }
+    .section-bg-about
+    {
+        background-size: 350px;
+    }
     .section
     {
         &.section-home-banner
@@ -1297,6 +1326,13 @@ $viewpoint-mobile-menu-2: 991px;
                 width: 80%;
                 margin-right: auto;
                 margin-left: auto;
+            }
+            &.section-products-map
+            {
+                img
+                {
+                    width: 500px;
+                }
             }
         }
         &.section-4
@@ -1506,6 +1542,10 @@ $viewpoint-mobile-menu-2: 991px;
     {
         max-width: $viewpoint-mobile;
     }
+    .section-bg-about
+    {
+        background-size: 250px;
+    }
     .section
     {
         &.section-home-banner
@@ -1569,6 +1609,13 @@ $viewpoint-mobile-menu-2: 991px;
                 width: 80%;
                 margin-right: auto;
                 margin-left: auto;
+            }
+            &.section-products-map
+            {
+                img
+                {
+                    width: 300px;
+                }
             }
         }
         &.section-4
